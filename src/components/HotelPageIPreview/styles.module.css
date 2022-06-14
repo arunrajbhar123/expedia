@@ -33,3 +33,41 @@
   align-items: center;
   color:rgb(41, 41, 166);
 }
+
+/* small_navbar start */
+
+.small_navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(148, 147, 147);
+  /* padding:5px;  */
+  width:100%;
+  position: sticky;
+  top:0;
+}
+.small_navbar ul{
+  display: flex;
+  gap:12px;
+  list-style: none;
+  
+}
+.small_navbar ul li{
+  padding:10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size:19px;
+
+}
+
+.small_navbar ul li:hover{
+  border-bottom: 3px solid rgb(19, 111, 231);
+  
+}
+.small_navbar button{
+  background-color:#0f47df;
+  padding:5px;
+  border-radius:5px;
+  color:#fff;
+  font-weight: 500;
+}

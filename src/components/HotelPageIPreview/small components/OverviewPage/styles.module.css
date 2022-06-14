@@ -1,0 +1,16 @@
+.name_Hotel_map {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  padding:15px;
+  padding-top:22px;
+}
+.Hotel_location {
+  width: 25rem;
+}
+.see_review{
+  display:flex;
+  align-items: center;
+  color:rgb(0, 94, 255);
+
+}

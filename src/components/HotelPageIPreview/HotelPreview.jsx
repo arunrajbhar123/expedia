@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Box, Text } from "@chakra-ui/react";
 import styles from "./styles.module.css";
 import { WarningTwoIcon, ArrowBackIcon } from "@chakra-ui/icons";
-import TopImage from "./small components/TopImage";
+import TopImage from "./small components/TopImage/TopImage";
+import Overview from "./small components/OverviewPage/Overview";
 import axios from "axios";
+import {Link} from "react-router-dom";
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
-  
+
   useEffect(() => {
     axios.get("http://localhost:8080/image").then((res) => {
       // setImgaeTop(res.data);
@@ -23,7 +25,6 @@ const HotelPreview = () => {
 
   return (
     <div className={styles.main_container}>
-      
       <Box w="80%" margin="auto" p="1.5" bg="#fff">
         <Box
           style={covidBanner ? { display: "none" } : {}}
@@ -51,6 +52,21 @@ const HotelPreview = () => {
           <p>See all properties</p>
         </div>
         <TopImage imgaeTop={imgaeTop} />
+        {/* overview navbar */}
+
+        <div className={styles.small_navbar}>
+          <ul>
+            <li><Link to="">overview</Link></li>
+            <li><Link to="">rooms</Link>   </li>
+            <li><Link to="">location</Link></li>
+            <li><Link to="">amenitie</Link></li>
+            <li><Link to="">policies</Link></li>
+            <li><Link to="">reviews</Link> </li>
+          </ul>
+          <button>Reserve a room</button>
+        </div>
+{/* overView page */}
+<Overview/>
       </Box>
     </div>
   );
