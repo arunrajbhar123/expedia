@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import styles from "./styles.module.css";
 import { WarningTwoIcon, ArrowBackIcon } from "@chakra-ui/icons";
 import TopImage from "./small components/TopImage/TopImage";
 import Overview from "./small components/OverviewPage/Overview";
+import Rooms from "./small components/rooms/Rooms";
 import axios from "axios";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
@@ -25,7 +26,13 @@ const HotelPreview = () => {
 
   return (
     <div className={styles.main_container}>
-      <Box w="80%" margin="auto" p="1.5" bg="#fff">
+      <div className={styles.ads_first}>
+        <img
+          src="https://tpc.googlesyndication.com/simgad/4652945743188291985?"
+          alt="ads"
+        />
+      </div>
+      <Box w="75%" margin="auto" p="1.5" bg="#fff">
         <Box
           style={covidBanner ? { display: "none" } : {}}
           w="100%"
@@ -56,18 +63,86 @@ const HotelPreview = () => {
 
         <div className={styles.small_navbar}>
           <ul>
-            <li><Link to="">overview</Link></li>
-            <li><Link to="">rooms</Link>   </li>
-            <li><Link to="">location</Link></li>
-            <li><Link to="">amenitie</Link></li>
-            <li><Link to="">policies</Link></li>
-            <li><Link to="">reviews</Link> </li>
+            <li>
+              <Link
+                to="overview"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                overview
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="rooms"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                rooms
+              </Link>{" "}
+            </li>
+            <li>
+              <Link
+                to="location"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                location
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="amenitie"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                amenitie
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="policies"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                policies
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="reviews"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
+              >
+                reviews
+              </Link>{" "}
+            </li>
           </ul>
-          <button>Reserve a room</button>
+          <Button  _hover={{ bg: "blue.500" }}>Reserve a room</Button>
         </div>
-{/* overView page */}
-<Overview/>
+        <div className={styles.ads_first} style={{ bottom: "-62px" }}>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/3300578970834289968?"
+            alt=""
+          />
+        </div>
+        {/* overView page */}
+        <Overview />
       </Box>
+      {/* Rooms */}
+      <Rooms/>
     </div>
   );
 };

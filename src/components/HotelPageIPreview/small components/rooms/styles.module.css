@@ -1,0 +1,26 @@
+.date_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date_content{
+  margin-top:12px;
+}
+.date_content div {
+  border: 1px solid #111;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.date_content div input{
+  cursor: pointer;
+  background:rgba(255, 0, 0, 0);
+}
+
+.date_content div:nth-child(3){
+  padding: 12px 72px 12px 72px;
+}.date_content div:nth-child(2){
+  padding: 12px 52px 12px 52px;
+}.date_content div:nth-child(1){
+  padding: 12px 42px 12px 42px;
+}

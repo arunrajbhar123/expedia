@@ -15,6 +15,9 @@
   width: 450px;
   overflow: hidden;
 }
+.imageBox img{
+  cursor: pointer;
+}
 .imageBox > div:nth-child(1) {
   grid-area: a;
 }

@@ -2,15 +2,46 @@
   display: flex;
   justify-content: space-between;
   text-align: start;
-  padding:15px;
-  padding-top:22px;
+  padding: 15px;
+  padding-top: 22px;
 }
-.Hotel_location {
-  width: 25rem;
-}
-.see_review{
-  display:flex;
+.see_review {
+  display: flex;
   align-items: center;
-  color:rgb(0, 94, 255);
-
+  color: rgb(0, 94, 255);
+  cursor: pointer;
 }
+
+/* popular_items */
+.category_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel_category {
+  padding: 15px;
+}
+.popular_items {
+  text-align: start;
+}
+
+.popular_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding-top: 12px;
+}
+.popular_items i {
+  margin-right: 12px;
+}
+.explore_items > div {
+  display: flex;
+  justify-content: space-between;
+  padding:5px;
+  padding-right:19px;
+}
+.explore_items i{
+  margin-right: 20px;
+}
+

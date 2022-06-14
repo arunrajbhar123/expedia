@@ -1,73 +1,83 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.main_container{
-  background-color:#f8f5f4;
+.ads_first {
+  position: absolute;
+  left: 83rem;
 }
-.covid_banner_box{
-  display:flex;
+.main_container {
+  background-color: #f8f5f4;
+  position: relative;
+}
+.covid_banner_box {
+  display: flex;
   align-items: center;
-  font-family: segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: segoe "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.covid_banner{
-  margin-left:32px;
+.covid_banner {
+  margin-left: 32px;
   font-weight: 350;
 }
 .covid_banner_btn {
-  display:flex;
-  text-decoration:underline;
-  padding-top:8px;
- 
+  display: flex;
+  text-decoration: underline;
+  padding-top: 8px;
+  cursor: pointer;
 }
-.covid_banner_btn p:last-child{
-  padding-left:22px;
+
+.covid_banner_btn p:last-child {
+  padding-left: 22px;
 }
-.back_to_all_product{
-  display:flex;
-  gap:22px;
-  padding:2px;
-  padding-top:8px;
-  padding-bottom:8px;
+.back_to_all_product {
+  display: flex;
+  gap: 22px;
+  padding: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   align-items: center;
-  color:rgb(41, 41, 166);
+  color: rgb(41, 41, 166);
 }
 
 /* small_navbar start */
 
-.small_navbar{
-  display:flex;
+.small_navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(148, 147, 147);
   /* padding:5px;  */
-  width:100%;
+  width: 100%;
   position: sticky;
-  top:0;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  transition: all 0.5s;
+  padding:5px;
 }
-.small_navbar ul{
+.small_navbar ul {
   display: flex;
-  gap:12px;
+  gap: 12px;
   list-style: none;
-  
 }
-.small_navbar ul li{
-  padding:10px;
+.small_navbar ul li {
+  padding: 10px;
   text-transform: capitalize;
   font-weight: 600;
-  font-size:19px;
-
+  font-size: 19px;
 }
 
-.small_navbar ul li:hover{
+.small_navbar ul li:hover {
   border-bottom: 3px solid rgb(19, 111, 231);
-  
 }
-.small_navbar button{
-  background-color:#0f47df;
-  padding:5px;
-  border-radius:5px;
-  color:#fff;
+.small_navbar button {
+  background-color: #0f47df;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
   font-weight: 500;
+  padding: 12px 32px 12px 32px;
 }
+
+/* room */
