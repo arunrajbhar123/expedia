@@ -1,0 +1,40 @@
+.imageBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 2px;
+  width: 100%;
+  grid-template-areas: "a a b c" "a a f e";
+  overflow: hidden;
+}
+.imageBox img {
+}
+.imageBox div {
+  width: 450px;
+  overflow: hidden;
+}
+.imageBox > div:nth-child(1) {
+  grid-area: a;
+}
+
+.imageBox > div:nth-child(2) {
+  grid-area: b;
+}
+
+.imageBox > div:nth-child(3) {
+  grid-area: c;
+}
+
+.imageBox > div:nth-child(4) {
+  grid-area: d;
+}
+
+.imageBox > div:nth-child(5) {
+  grid-area: e;
+
+  grid-row: 240px;
+}
+
+.imageBox > div:nth-child(6) {
+  grid-area: f;
+}
