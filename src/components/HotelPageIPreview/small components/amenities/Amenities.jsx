@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { Box, Text } from "@chakra-ui/react";
+import  {Slider}  from "../Slider/Slider";
 const Amenities = () => {
   return (
     <div id="amenitie">
@@ -271,7 +272,7 @@ const Amenities = () => {
         </div>
       </Box>
 
-      <div>slider</div>
+    <Slider/>
     </div>
   );
 };

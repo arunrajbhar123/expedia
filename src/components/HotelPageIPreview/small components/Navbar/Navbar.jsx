@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import styles from "./styles.module.css";
 import {  Button } from "@chakra-ui/react";
 const Navbar = () => {
+  console.log(Link);
   return (
     <div>
        <div className={styles.small_navbar}>

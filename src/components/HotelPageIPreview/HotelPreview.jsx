@@ -31,12 +31,6 @@ const HotelPreview = () => {
 
   return (
     <div className={styles.main_container}>
-      <div className={styles.ads_first}>
-        <img
-          src="https://tpc.googlesyndication.com/simgad/4652945743188291985?"
-          alt="ads"
-        />
-      </div>
       <Box w="75%" margin="auto" p="1.5" bg="#fff">
         <Box
           style={covidBanner ? { display: "none" } : {}}
@@ -64,13 +58,10 @@ const HotelPreview = () => {
           <p>See all properties</p>
         </div>
         <TopImage imgaeTop={imgaeTop} />
+
         {/* overview navbar */}
 
-       
-
-<Navbar/>
-
-
+        <Navbar />
 
         <div className={styles.ads_first} style={{ bottom: "-62px" }}>
           <img
