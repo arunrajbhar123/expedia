@@ -18,7 +18,7 @@ function Iframe(props) {
 }
 const Location = () => {
   return (
-    <div>
+    <div id="location">
       <Box
         w="75%"
         margin="auto"

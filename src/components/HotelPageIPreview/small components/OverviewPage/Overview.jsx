@@ -35,7 +35,7 @@ const Overview = () => {
     { icon: "fa-solid fa-location-dot", name: "Artis", time: "11 min walk" },
   ];
   return (
-    <div>
+    <div id="overview">
       <div className={styles.name_Hotel_map}>
         <div>
           <p>UNESCO Sustainble Travel Pledge</p>

@@ -3,6 +3,17 @@ import styles from "./styles.module.css";
 import { Box, Text, Button } from "@chakra-ui/react";
 // import { axios } from "axios";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+} from "@chakra-ui/react";
 
 const Rooms = () => {
   const [room, setRoom] = useState("");
@@ -19,7 +30,7 @@ const Rooms = () => {
   // })
   // })}
   return (
-    <div>
+    <div id="rooms">
       <Box w="75%" margin="auto" paddingTop="12px">
         <Text fontSize="3xl" fontWeight="500" textAlign="start">
           Choose your room
@@ -45,7 +56,7 @@ const Rooms = () => {
         </div>
       </Box>
       <Box w="75%" margin="auto" p="1.5">
-        <div className={styles.room_box_size} >
+        <div className={styles.room_box_size}>
           {room &&
             room.map((el, id) => (
               <div key={id}>
@@ -120,12 +131,37 @@ const Rooms = () => {
                     <div>
                       <p>Rs 13,805 total</p>
                       <div className={styles.price_btn_total_amount_details}>
-                        <p>Price details</p>
-                        <ChevronRightIcon w={5} h={5} />
+                        {/*  */}
+
+                        <Popover>
+                          <PopoverTrigger>
+                            {/* <Button>Trigger</Button> */}
+                            <p>Price details</p>
+                            {/* <ChevronRightIcon w={5} h={5} /> */}
+                          </PopoverTrigger>
+                          <PopoverContent>
+                            <PopoverArrow />
+                            <PopoverCloseButton />
+                            <PopoverHeader>Price details!</PopoverHeader>
+                            <PopoverBody>
+                              Are you sure you want to have that milkshake?
+                            </PopoverBody>
+                          </PopoverContent>
+                        </Popover>
+
+                        {/*  */}
                       </div>
                     </div>
                     <div>
-                      <p style={{textAlign:"end",paddingBottom:"10px",color:"#840000"}}>We have 5 left</p>
+                      <p
+                        style={{
+                          textAlign: "end",
+                          paddingBottom: "10px",
+                          color: "#840000",
+                        }}
+                      >
+                        We have 5 left
+                      </p>
                       <Button
                         bg="blue"
                         color="#fff"

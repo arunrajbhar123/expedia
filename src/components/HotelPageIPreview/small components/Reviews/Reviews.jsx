@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const Reviews = () => {
   return (
-    <div className={styles.main_container_reviews}>
+    <div id="reviews" className={styles.main_container_reviews}>
       <Box w="75%" margin="auto" p="1.5" bg="#fff" borderRadius="8px">
         <div className={styles.reviews_flex}>
           <div>

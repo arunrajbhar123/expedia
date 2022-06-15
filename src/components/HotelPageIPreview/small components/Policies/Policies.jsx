@@ -3,7 +3,7 @@ import { Text, Box } from "@chakra-ui/react";
 import styles from "./styles.module.css";
 const Policies = () => {
   return (
-    <div>
+    <div id="policies">
       <Box w="75%" margin="auto" marginTop="22px" bg="#fff" borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
