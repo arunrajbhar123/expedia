@@ -1,0 +1,44 @@
+.main_flexing {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: start;
+  gap:15px;
+}
+
+.main_flexing_first_inner {
+  display: flex;
+  padding-bottom:25px;
+}
+.main_flexing_first_inner i {
+  padding-top: 12px;
+  padding-right: 12px;
+}
+.main_flexing_width {
+  width: 24rem;
+}
+.main_flexing_first {
+  width: 35%;
+}
+.main_flexing_second {
+  width: 35%;
+}
+
+
+/* frequently_questions */
+
+.frequently_questions{
+  display:flex;
+  padding:15px;
+}
+.frequently_questions_width{
+  width:35rem;
+  text-align: start;
+  
+}
+.frequently_questions_width details{
+  padding-top:12px;
+}
+.frequently_questions_width details summary{
+  font-weight: 700;
+}

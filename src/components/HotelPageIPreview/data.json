@@ -74,5 +74,126 @@
     {
       "img": "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit"
     }
+  ],
+  "rooms": [
+    {
+      "images": [
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      ],
+      "hotelSize": ["Small groups frequently book this room"],
+      "hotelTerm": ["Classic Room, 1 King Bed, Non Smoking"],
+      "benefit": [
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Breakfast buffet",
+          "rupees": "0",
+          "icon": ""
+        },
+        {
+          "name": "Breakfast buffet + Dinner + Special deal More details",
+          "rupees": "1120",
+          "icon": "fa fa-exclamation-circle"
+        },
+        {
+          "name": "All meals + Special deal More details",
+          "rupees": "0",
+          "icon": "fa fa-exclamation-circle"
+        }
+      ],
+      "price":["11,199"]
+    },{
+      "images": [
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit",
+        "https://images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+      ],
+      "hotelSize": ["Small groups frequently book this room"],
+      "hotelTerm": ["Classic Room, 1 King Bed, Non Smoking"],
+      "benefit": [
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        },
+        {
+          "icon": "fa-solid fa-building",
+          "name": "355 sq ft"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Breakfast buffet",
+          "rupees": "0",
+          "icon": ""
+        },
+        {
+          "name": "Breakfast buffet + Dinner + Special deal More details",
+          "rupees": "1120",
+          "icon": "fa fa-exclamation-circle"
+        },
+        {
+          "name": "All meals + Special deal More details",
+          "rupees": "0",
+          "icon": "fa fa-exclamation-circle"
+        }
+      ],
+      "price":["11,199"]
+    }
   ]
 }

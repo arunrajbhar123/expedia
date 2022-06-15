@@ -1,0 +1,59 @@
+.main_container {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+.main_container_box_first {
+  width: 40%;
+}
+.main_container_box_first h1 {
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.main_container_box_first p {
+  padding-bottom: 8px;
+}
+.main_container_box_first span {
+  color: blue;
+}
+.main_container_box_second {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.map_places{
+  display:flex;
+  gap:12px;
+  padding-top: 12px;
+}
+.map_places i{
+  margin-top:8px;
+  font-size:19px;
+}
+.property_about{
+  padding:15px;
+  display:flex;
+  justify-content: space-between;
+}
+.property_about_width_first{
+  width:55rem;
+  text-align: start;
+}
+.property_about_width_second{
+  text-align: start;
+
+}
+.property_about_width_second_last{
+  text-align: start;
+  display:flex;
+  padding-bottom:10px;
+  
+}
+.property_about_width_second_last i{
+  padding-top:10px;
+  padding-right:10px;
+  
+}

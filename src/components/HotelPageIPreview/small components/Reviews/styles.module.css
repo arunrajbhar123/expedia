@@ -1,0 +1,34 @@
+.main_container_reviews{
+  padding-top:25px;
+}
+.reviews_flex{
+  display:flex;
+  justify-content: space-between;
+  padding:15px;
+  gap:25px;
+}
+.reviews_flex_rate_text{
+  display:flex;
+ 
+  gap:25px;
+
+}
+.reviews_flex_rate_text_word{
+  text-align: start;
+  padding-top:22px;
+}
+.progress_bar{
+  text-align: start;
+  width:20rem;
+}
+.progress_bar p{
+  padding-bottom:5px;
+  padding-top:5px;
+}
+.comment_first,.seeallreview{
+  text-align: start;
+}
+
+.seeallreview{
+  padding-top:22px;
+}

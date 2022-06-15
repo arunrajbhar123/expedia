@@ -7,6 +7,10 @@ import Overview from "./small components/OverviewPage/Overview";
 import Rooms from "./small components/rooms/Rooms";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Location from "./small components/location/Location";
+import Amenities from "./small components/amenities/Amenities";
+import Policies from "./small components/Policies/Policies";
+import Reviews from "./small components/Reviews/Reviews";
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
@@ -66,10 +70,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="overview"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 overview
               </Link>
@@ -77,10 +81,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="rooms"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 rooms
               </Link>{" "}
@@ -88,10 +92,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="location"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 location
               </Link>
@@ -99,10 +103,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="amenitie"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 amenitie
               </Link>
@@ -110,10 +114,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="policies"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 policies
               </Link>
@@ -121,10 +125,10 @@ const HotelPreview = () => {
             <li>
               <Link
                 to="reviews"
-                smooth={true}
-                duration={1000}
-                activeClass="active"
-                spy={true}
+                // smooth={true}
+                // duration={1000}
+                // activeClass="active"
+                // spy={true}
               >
                 reviews
               </Link>{" "}
@@ -143,6 +147,16 @@ const HotelPreview = () => {
       </Box>
       {/* Rooms */}
       <Rooms/>
+
+      {/* Location */}
+      <Location/>
+
+      {/* Amenities */}
+      <Amenities/>
+      {/* Policies */}
+      <Policies/>
+      {/* Reviews */}
+      <Reviews/>
     </div>
   );
 };
