@@ -31,7 +31,7 @@ const Rooms = () => {
   // })}
   return (
     <div id="rooms">
-      <Box w="75%" margin="auto" paddingTop="12px">
+      <Box marginTop="25px" marginBottom="25px">
         <Text fontSize="3xl" fontWeight="500" textAlign="start">
           Choose your room
         </Text>
@@ -55,7 +55,7 @@ const Rooms = () => {
           </Button>
         </div>
       </Box>
-      <Box w="75%" margin="auto" p="1.5">
+      <Box >
         <div className={styles.room_box_size}>
           {room &&
             room.map((el, id) => (

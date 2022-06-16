@@ -1,3 +1,4 @@
+
 .date_content {
   display: flex;
   justify-content: space-between;
@@ -30,13 +31,16 @@
 /* rooms box styles start room_box_size */
 
 .room_box_size {
-  width: 400px;
-  border-radius:7px;
-  background-color: #fff;
-  overflow: hidden;
+  display:flex;
+  gap:25px;
  
 }
-
+.room_box_size div{
+  width: 400px;
+  border-radius:7px;
+  overflow: hidden;
+  background-color:#fff;
+}
 .room_icon_benifit {
   text-align: start;
   padding-left:12px;

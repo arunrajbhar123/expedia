@@ -1,15 +1,20 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
-.ads_first {
-  position: absolute;
-  left: 83rem;
+.only_bg_color{
+  background-color: #f8f5f4;
 }
 .main_container {
-  background-color: #f8f5f4;
-  position: relative;
+  display: flex;
+  gap:-1em;
+  width:95%;
+  margin:auto;
+  justify-content: space-evenly;
+  
 }
 .covid_banner_box {
   display: flex;
@@ -42,5 +47,9 @@
 
 /* small_navbar start */
 
-
+.navbar_sticky{
+  position: sticky;
+  top:0;
+  z-index:100;
+}
 /* room */

@@ -12,10 +12,14 @@ import Amenities from "./small components/amenities/Amenities";
 import Policies from "./small components/Policies/Policies";
 import Reviews from "./small components/Reviews/Reviews";
 import Navbar from "./small components/Navbar/Navbar";
+import { Routes, Route, useParams } from "react-router-dom";
+import Ads from "./small components/Advetisement/Ads";
+
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
-
+  const linkLe = useParams();
+  console.log("i ma", linkLe);
   useEffect(() => {
     axios.get("http://localhost:8080/image").then((res) => {
       // setImgaeTop(res.data);
@@ -30,9 +34,11 @@ const HotelPreview = () => {
   }, []);
 
   return (
-    <div className={styles.main_container}>
-      <Box w="75%" margin="auto" p="1.5" bg="#fff">
-        <Box
+   <div className={styles.only_bg_color}>
+     <div className={styles.main_container} >
+      <Box w="75%" p="1.5" >
+    
+        <Box 
           style={covidBanner ? { display: "none" } : {}}
           w="100%"
           bg={"#343b53"}
@@ -52,26 +58,25 @@ const HotelPreview = () => {
               <p onClick={() => setCovidBanner(!covidBanner)}>Dismiss</p>
             </div>
           </div>
+         
         </Box>
-        <div className={styles.back_to_all_product}>
+
+        <div className={styles.back_to_all_product} style={{backgroundColor:"#fff"}}>
           <ArrowBackIcon w={5} h={5} />
           <p>See all properties</p>
         </div>
         <TopImage imgaeTop={imgaeTop} />
 
         {/* overview navbar */}
-
-        <Navbar />
-
-        <div className={styles.ads_first} style={{ bottom: "-62px" }}>
-          <img
-            src="https://tpc.googlesyndication.com/simgad/3300578970834289968?"
-            alt=""
-          />
-        </div>
+        <div className={styles.navbar_sticky}>
+          <Navbar />
+       </div>
         {/* overView page */}
         <Overview />
-      </Box>
+     
+
+    
+
       {/* Rooms */}
       <Rooms />
 
@@ -84,7 +89,11 @@ const HotelPreview = () => {
       <Policies />
       {/* Reviews */}
       <Reviews />
+    
+      </Box>
+      <Ads />
     </div>
+   </div>
   );
 };
 

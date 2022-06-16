@@ -4,15 +4,13 @@
   align-items: center;
   border-bottom: 1px solid rgb(148, 147, 147);
   width: 100%;
-  position: sticky;
-  top: 0;
   background-color: #fff;
   transition: all 0.5s;
   padding: 5px;
 }
 .small_navbar ul {
   display: flex;
-  gap: 12px;
+  gap: 17px;
   list-style: none;
 }
 .small_navbar ul li {
@@ -21,11 +19,13 @@
   font-weight: 600;
   font-size: 19px;
   cursor: pointer;
-  
 }
 
 .small_navbar ul li:hover {
-  box-shadow: 0px 4px 0px -1px  #0f47df;
+  box-shadow: 0px 4px 0px -1px #0f47df;
+  
+  /* box-shadow: 0px 5px 0px 0px rgb(255, 255, 255),
+    0px 0px 0px 0px rgb(255, 255, 255), -1px 10px 0px -1px #0f47df; */
 }
 .small_navbar button {
   background-color: #0f47df;
@@ -36,5 +36,8 @@
   padding: 12px 32px 12px 32px;
 }
 .active {
-  box-shadow: 0px 4px 0px -1px  #0f47df;
+  box-shadow: 0px 15px 0px 0px rgb(255, 255, 255),
+    0px 16px 0px 0px rgb(255, 255, 255), -1px 21px 0px -1px #0f47df;
+ color:#0f47df;
+  
 }

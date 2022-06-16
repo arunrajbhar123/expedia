@@ -5,7 +5,7 @@ import  {Slider}  from "../Slider/Slider";
 const Amenities = () => {
   return (
     <div id="amenitie">
-      <Box w="75%" margin="auto" marginTop="22px" bg="#fff" borderRadius="8px">
+      <Box marginTop="25px" bg="#fff" borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
             <Text fontSize="2xl" fontWeight="600">

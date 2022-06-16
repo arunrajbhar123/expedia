@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 const Policies = () => {
   return (
     <div id="policies">
-      <Box w="75%" margin="auto" marginTop="22px" bg="#fff" borderRadius="8px">
+      <Box marginTop="25px" bg="#fff"  borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
             <Text fontSize="2xl" fontWeight="600">
@@ -120,7 +120,7 @@ const Policies = () => {
 
       {/* another fase */}
 
-      <Box w="75%" margin="auto" marginTop="22px" bg="#fff" borderRadius="8px">
+      <Box marginTop="25px" bg="#fff"  borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
             <Text fontSize="2xl" fontWeight="600">
@@ -227,7 +227,7 @@ const Policies = () => {
       </Box>
 
       {/* another fase */}
-      <Box w="75%" margin="auto" marginTop="22px" bg="#fff" borderRadius="8px">
+      <Box marginTop="25px" bg="#fff"  borderRadius="8px">
         <div className={styles.frequently_questions}>
           <Text fontSize="2xl" w="500px" textAlign="start" fontWeight="600">Frequently ansked questions</Text>
           <div className={styles.frequently_questions_width}>

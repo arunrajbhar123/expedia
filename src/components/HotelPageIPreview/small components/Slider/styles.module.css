@@ -1,0 +1,42 @@
+.main_main_main {
+  display: flex;
+  gap: 15px;
+  
+
+}
+
+
+.main_container {
+  width: 15rem;
+  background-color: #fff;
+  text-align: start;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.text_padding_words {
+  padding: 15px;
+}
+.text_padding_words h1 {
+  font-size: 19px;
+  font-weight: 600;
+}
+.text_padding_words p:first-child {
+  padding-top: 12px;
+}
+.icon {
+  display: flex;
+  gap: 12px;
+}
+.icon i {
+  padding-top: 5px;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+}
+.flex_second {
+  padding-top: 15px;
+}

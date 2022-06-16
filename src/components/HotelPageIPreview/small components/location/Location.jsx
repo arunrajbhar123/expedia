@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, Box } from "@chakra-ui/react";
-import { ExternalLinkIcon,CheckIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon, CheckIcon } from "@chakra-ui/icons";
 import styles from "./styles.module.css";
 
 const demos = {
@@ -19,14 +19,7 @@ function Iframe(props) {
 const Location = () => {
   return (
     <div id="location">
-      <Box
-        w="75%"
-        margin="auto"
-        p="1.5"
-        marginTop="35px"
-        bg="#fff"
-        borderRadius="8px"
-      >
+      <Box marginTop="25px" bg="#fff" borderRadius="8px">
         <div className={styles.main_container}>
           <div className={styles.main_container_box_first}>
             <Text fontSize="3xl" fontWeight="600">
@@ -87,21 +80,18 @@ const Location = () => {
           </div>
         </div>
       </Box>
-      <Box
-        w="75%"
-        margin="auto"
-        p="1.5"
-        marginTop="35px"
-        bg="#fff"
-        borderRadius="8px"
-      >
+      <Box marginTop="25px" paddingBottom="25px" bg="#fff" borderRadius="8px">
         <div className={styles.property_about}>
           <div className={styles.property_about_width_first}>
-            <Text fontSize="2xl" fontWeight="600">About this property</Text>
+            <Text fontSize="2xl" fontWeight="600">
+              About this property
+            </Text>
           </div>
           <div>
             <div className={styles.property_about_width_second}>
-              <Text fontSize="2xl" paddingBottom="12px">Le Meridien Goa, Calangute</Text>
+              <Text fontSize="2xl" paddingBottom="12px">
+                Le Meridien Goa, Calangute
+              </Text>
               <p>
                 This smoke-free hotel features 5 restaurants, an outdoor pool
                 and 3 bars/lounges. Free WiFi in public areas and free self
@@ -110,7 +100,9 @@ const Location = () => {
               </p>
             </div>
             <div className={styles.property_about_width_second}>
-              <Text fontSize="2xl" paddingBottom="12px">Languages spoken</Text>
+              <Text fontSize="2xl" paddingBottom="12px">
+                Languages spoken
+              </Text>
               <p>English, Hindi</p>
             </div>
           </div>
@@ -118,13 +110,17 @@ const Location = () => {
         <hr />
         <div className={styles.property_about}>
           <div className={styles.property_about_width_first}>
-            <Text fontSize="2xl" fontWeight="600" w="24rem">Cleaning and safety practices</Text>
+            <Text fontSize="2xl" fontWeight="600" w="24rem">
+              Cleaning and safety practices
+            </Text>
           </div>
           <div>
             <div className={styles.property_about_width_second_last}>
-            <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
               <div>
-                <Text fontSize="2xl" paddingBottom="12px">Enhanced cleanliness measures</Text>
+                <Text fontSize="2xl" paddingBottom="12px">
+                  Enhanced cleanliness measures
+                </Text>
                 <p>
                   Disinfectant is used to clean the property Property is
                   disinfected with electrostatic spray High-touch surfaces are
@@ -138,9 +134,11 @@ const Location = () => {
               </div>
             </div>
             <div className={styles.property_about_width_second_last}>
-              <i className="fas fa-male" style={{fontSize:"19px"}}/>
+              <i className="fas fa-male" style={{ fontSize: "19px" }} />
               <div>
-                <Text fontSize="2xl" paddingBottom="12px">Check-in</Text>
+                <Text fontSize="2xl" paddingBottom="12px">
+                  Check-in
+                </Text>
                 <p>
                   Contactless social distancing and check-out Cashless
                   transactions are available for all charges at the property
@@ -152,9 +150,11 @@ const Location = () => {
               </div>
             </div>
             <div className={styles.property_about_width_second_last}>
-            <CheckIcon  marginTop="8px" paddingRight="5px" w={5} h={5}/>
+              <CheckIcon marginTop="8px" paddingRight="5px" w={5} h={5} />
               <div>
-                <Text fontSize="2xl" paddingBottom="12px">Safety measures</Text>
+                <Text fontSize="2xl" paddingBottom="12px">
+                  Safety measures
+                </Text>
                 <p>
                   Personal protective equipment worn by staff Temperature checks
                   given to staff Temperature checks available for guests Masks
@@ -170,7 +170,6 @@ const Location = () => {
         </div>
         <h1>This information is provided by our partners.</h1>
       </Box>
-      
     </div>
   );
 };

@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const Reviews = () => {
   return (
     <div id="reviews" className={styles.main_container_reviews}>
-      <Box w="75%" margin="auto" p="1.5" bg="#fff" borderRadius="8px">
+      <Box  bg="#fff"  borderRadius="8px">
         <div className={styles.reviews_flex}>
           <div>
             <div className={styles.reviews_flex_rate_text}>
@@ -145,7 +145,13 @@ const Reviews = () => {
             </div>
             <hr />
             <div className={styles.seeallreview}>
-              <Button background="transparent" border="1px solid grey" color="blue">See all reviews</Button>
+              <Button
+                background="transparent"
+                border="1px solid grey"
+                color="blue"
+              >
+                See all reviews
+              </Button>
             </div>
           </div>
         </div>
