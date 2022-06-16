@@ -36,13 +36,13 @@ const Rooms = () => {
           Choose your room
         </Text>
         <div className={styles.date_content}>
-          <div>
+          <div style={{backgroundColor:"#fff"}}>
+            <input type="date"  />
+          </div>
+          <div style={{backgroundColor:"#fff"}}>
             <input type="date" />
           </div>
-          <div>
-            <input type="date" />
-          </div>
-          <div className={styles.date_content_width}>
+          <div className={styles.date_content_width} style={{backgroundColor:"#fff"}}>
             <input type="date" />
           </div>
           <Button
@@ -119,12 +119,12 @@ const Rooms = () => {
                         </Text>
                       </div>
 
-                      <p>+ Rs{el.rupees}</p>
+                      <p style={{paddingRight:"12px"}}>+Rs{el.rupees}</p>
                     </div>
                   ))}
                 </div>
                 <div className={styles.price_btn_total_amount}>
-                  <Text fontSize="3xl" fontWeight="700">
+                  <Text fontSize="2xl" fontWeight="700">
                     Rs{el.price}
                   </Text>
                   <div className={styles.price_btn_total_amount_flex}>
@@ -133,18 +133,30 @@ const Rooms = () => {
                       <div className={styles.price_btn_total_amount_details}>
                         {/*  */}
 
-                        <Popover>
-                          <PopoverTrigger>
+                        <Popover >
+                          <PopoverTrigger >
                             {/* <Button>Trigger</Button> */}
                             <p>Price details</p>
                             {/* <ChevronRightIcon w={5} h={5} /> */}
                           </PopoverTrigger>
-                          <PopoverContent>
+                          <PopoverContent color="#111" border="none">
                             <PopoverArrow />
                             <PopoverCloseButton />
                             <PopoverHeader>Price details!</PopoverHeader>
                             <PopoverBody>
-                              Are you sure you want to have that milkshake?
+                             <div style={{display:"flex",color:"#111"}}>
+                              <div> <p>1 room x 1 night</p>
+                              <p>Taxes and fees</p>
+                              <p>Local tax</p>
+                              <b style={{lineHeight:"3"}}>Total</b>
+                              </div>
+                              <div>
+                                <p>Rs11,253</p>
+                                <p>Rs1,013</p>
+                                <p>Rs681</p>
+                                <b style={{lineHeight:"3"}}>Rs12,947</b>
+                              </div>
+                             </div>
                             </PopoverBody>
                           </PopoverContent>
                         </Popover>
@@ -156,8 +168,9 @@ const Rooms = () => {
                       <p
                         style={{
                           textAlign: "end",
-                          paddingBottom: "10px",
-                          color: "#840000",
+                          paddingBottom: "2px",
+                          color: "#840000",  
+                          padding:"22px 30px 22px 30px",
                         }}
                       >
                         We have 5 left
@@ -165,7 +178,7 @@ const Rooms = () => {
                       <Button
                         bg="blue"
                         color="#fff"
-                        p={" 22px 30px 22px 30px"}
+                        p={" 22px 40px 22px 30px"}
                         _hover={{ bg: "blue.500" }}
                         fontWeight="500"
                         fontSize="22px"

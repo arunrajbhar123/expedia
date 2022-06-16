@@ -13,4 +13,21 @@ const Ads = () => {
   )
 }
 
-export default Ads
+
+
+const Ads2 = () => {
+  return (
+    <div>
+      <div className={styles.ads_second}>
+          <img
+            src="https://tpc.googlesyndication.com/simgad/11788750240072824287?"
+            alt="trip"
+          />
+        </div>
+    </div>
+  )
+}
+
+
+
+export { Ads,Ads2}

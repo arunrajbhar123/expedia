@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+
 const TopImage = ({ imgaeTop }) => {
   return (
     <div className={styles.imageBox}>

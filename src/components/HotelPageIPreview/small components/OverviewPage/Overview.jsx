@@ -61,7 +61,7 @@ const Overview = () => {
           </div>
         </div>
         <div className={styles.Hotel_location}>
-          <Box>
+          <Box borderRadius="8px" overflow="hidden">
             <Iframe iframe={demos["soundcloud"]} allow="autoplay" />
           </Box>
         </div>
