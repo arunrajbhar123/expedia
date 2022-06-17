@@ -15,12 +15,6 @@ function App() {
   return (
     <div className="App">
      <WithSubnavigation/>
-      {/* <h1>Expedia</h1> */}
-      {/* <HotelPreview /> */}
-      {/* <HomeMidSec/> */}
-
-
-      <div>
     <Routes>
     <Route exact path="/" element={<HomeMidSec/>}></Route>
     <Route exact path="/signin" element={<Multipleinputs/>}></Route>
@@ -29,7 +23,6 @@ function App() {
     <Route path="/hotelpreview" element={<HotelPreview/>} ></Route>
     </Routes>
 
-    </div>
 
       <Footer/>
 
