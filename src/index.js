@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "./store/store";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
-import AppContextProvider from './Components/Context/AppContext';
+import AppContextProvider from './components/Context/AppContext';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

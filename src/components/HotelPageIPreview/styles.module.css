@@ -5,8 +5,9 @@
   box-sizing: border-box;
 
 }
-.only_bg_color{
+#only_bg_color{
   background-color: #f8f5f4;
+  
 }
 .main_container {
   display: flex;
@@ -18,18 +19,24 @@
 }
 .covid_banner_box {
   display: flex;
-  align-items: center;
+  justify-content: start;
   font-family: segoe "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  align-items: center;
+ 
+  
 }
 .covid_banner {
   margin-left: 32px;
   font-weight: 350;
+  margin-top:12px;
 }
 .covid_banner_btn {
   display: flex;
   text-decoration: underline;
   padding-top: 8px;
   cursor: pointer;
+
 }
 
 .covid_banner_btn p:last-child {
@@ -38,11 +45,10 @@
 .back_to_all_product {
   display: flex;
   gap: 22px;
-  padding: 2px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   align-items: center;
   color: rgb(41, 41, 166);
+  background-color:#fff;
+  
 }
 
 /* small_navbar start */

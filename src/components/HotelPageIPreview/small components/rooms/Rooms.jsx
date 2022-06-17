@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { Box, Text, Button } from "@chakra-ui/react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 import {
@@ -15,61 +13,43 @@ import {
   PopoverCloseButton,
 } from "@chakra-ui/react";
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+
 
 const Rooms = () => {
   const [room, setRoom] = useState("");
+  const [priceRoom, setPriceRoom] = useState(11199)
+  console.log(priceRoom);
   useEffect(() => {
-    fetch("http://localhost:8080/rooms")
+    fetch("https://expedia-server-for.herokuapp.com/rooms")
       .then((res) => res.json())
       .then((data) => {
         setRoom(data);
       });
   }, []);
-  // {room && room.map((el)=>{
-  // el.images.map((el)=>{
-  //   console.log(el);
-  // })
-  // })}
+
   return (
     <div id="rooms">
-      <Box marginTop="25px" marginBottom="25px">
+      <Box marginTop="25px">
         <Text fontSize="3xl" fontWeight="500" textAlign="start">
           Choose your room
         </Text>
         <div className={styles.date_content}>
-          <div style={{ backgroundColor: "#fff" }}>
+          <div style={{ backgroundColor: "#fff",marginTop:"15px" }}>
             <input type="date" />
           </div>
-          <div style={{ backgroundColor: "#fff" }}>
+          <div style={{ backgroundColor: "#fff",marginTop:"15px" }}>
             <input type="date" />
           </div>
           <div
             className={styles.date_content_width}
-            style={{ backgroundColor: "#fff" }}
+            style={{ backgroundColor: "#fff",marginTop:"18px" }}
           >
             <input type="date" />
           </div>
           <Button
             bg="blue"
             color="#fff"
-            p={" 28px 72px 28px 72px"}
+            p={" 26px 72px 26px 72px"}
             _hover={{ bg: "blue.500" }}
           >
             Check availability
@@ -83,14 +63,13 @@ const Rooms = () => {
               <div key={id}>
                 <div>
                   <img src={el.images} alt="hotel" />
-                  {/* {el.images.map((el, id) => ( */}
+                  {/* {el.images.map((el, id) => (
                    
-                    
-                      {/* <div key={id}>
+                       <div key={id}>
                         <img src={el.images} alt="hotel" />
-                      </div> */}
-                   
-                 
+                      </div>
+))} */}
+
                 </div>
                 <Text
                   textAlign="start"
@@ -131,7 +110,7 @@ const Rooms = () => {
                         className={styles.extras_box_details_ruppes_separate}
                       >
                         {" "}
-                        <input type="radio" name="extras" />
+                        <input type="radio" name="extras" onClick={()=>setPriceRoom(12319)}/>
                         <Text w="200px">
                           {el.name}{" "}
                           {el.icon ? (
@@ -149,11 +128,11 @@ const Rooms = () => {
                 </div>
                 <div className={styles.price_btn_total_amount}>
                   <Text fontSize="2xl" fontWeight="700">
-                    Rs{el.price}
+                    Rs{priceRoom}
                   </Text>
                   <div className={styles.price_btn_total_amount_flex}>
                     <div>
-                      <p>Rs 13,805 total</p>
+                      <p>Rs {priceRoom} total</p>
                       <div className={styles.price_btn_total_amount_details}>
                         {/*  */}
 

@@ -2,10 +2,10 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import HotelPreview from "./components/HotelPageIPreview/HotelPreview.jsx";
 
-import Multipleinputs from './Components/forms/MultipleInputs';
+import Multipleinputs from './components/forms/MultipleInputs.jsx';
 // import AllRoutes from "./Components/pages/AllRoutes"
 import {Routes,Route} from 'react-router-dom'
-import Login from './Components/forms/Login';
+import Login from './components/forms/Login';
 
 import WithSubnavigation from "./components/Navbar/Navbar";
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
      <WithSubnavigation/>
-      <h1>Expedia</h1>
+      {/* <h1>Expedia</h1> */}
       <HotelPreview />
 
       <div>

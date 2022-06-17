@@ -32,9 +32,9 @@ export default function WithSubnavigation() {
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        minH={"70px"}
+        minH={"20px"}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 2 }}
         borderBottom={2}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray:200", "gray:900")}

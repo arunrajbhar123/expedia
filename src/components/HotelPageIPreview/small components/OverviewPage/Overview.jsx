@@ -73,26 +73,26 @@ const Overview = () => {
           {/* first category */}
           <div>
             {" "}
-            <div className={styles.popular_items}>
+            <div className={styles.popular_items} style={{marginTop:"-5em"}}>
               <Text fontSize="2xl" fontWeight="500">
                 Popular amenities
               </Text>
             </div>
-            <div className={styles.popular_items}>
+            <div className={styles.popular_items} >
               {popularIcon.map((el, id) => (
                 <div key={id}>
                   <i className={el.name}></i>
                   {el.title}
                 </div>
               ))}
-              <div className={styles.see_review}>
+              <div className={styles.see_review} >
                 <p>See All</p> <ChevronRightIcon w={5} h={5} />
               </div>
             </div>
           </div>
           {/* second category */}
           <div>
-            <div className={styles.popular_items}>
+            <div className={styles.popular_items} >
               <Text fontSize="2xl" fontWeight="500" width="500px">
                 Cleaning and safety practices
               </Text>
@@ -111,8 +111,8 @@ const Overview = () => {
           </div>
         </div>
         <div>
-          <div>
-            <div className={styles.popular_items} style={{ width: "470px" }}>
+          <div  style={{marginTop:"-5em"}}>
+            <div className={styles.popular_items} style={{ width: "450px" }}>
               <Text fontSize="2xl" fontWeight="500">
                 Explore the area
               </Text>
@@ -121,7 +121,7 @@ const Overview = () => {
               {exploreArea.map((el, id) => (
                 <div key={id}>
                   <div>
-                    {" "}
+                   
                     <i className={el.icon} />
                     {el.name}
                   </div>

@@ -1,6 +1,3 @@
-.main_container_reviews{
-  padding-top:25px;
-}
 .reviews_flex{
   display:flex;
   justify-content: space-between;
@@ -9,7 +6,6 @@
 }
 .reviews_flex_rate_text{
   display:flex;
- 
   gap:25px;
 
 }
@@ -22,8 +18,8 @@
   width:20rem;
 }
 .progress_bar p{
-  padding-bottom:5px;
-  padding-top:5px;
+ 
+  margin-bottom:-20px;
 }
 .comment_first,.seeallreview{
   text-align: start;

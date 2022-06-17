@@ -3,9 +3,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.date_content {
-  margin-top: 12px;
-}
+
 .date_content div {
   border: 1px solid #111;
   padding: 12px;
