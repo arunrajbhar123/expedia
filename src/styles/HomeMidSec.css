@@ -1,0 +1,104 @@
+.home-sec-image1{
+    background-image: url('https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 500px;
+    margin: auto; 
+    padding: 56px 12px 12px;
+    margin-top: 50px;
+    border-radius: 10px;
+    /* margin-bottom: 100px; */
+    background-color: #000B2680;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.home-sec-innerText-heading-div{
+    width: 388px;
+    margin-left: 48px;
+    opacity: 1;
+    z-index: 8;
+    
+}
+
+.home-sec-innerText-heading{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    z-index: 8;
+}
+
+.home-sec-innerText-des-div{
+    width: 388px;
+    margin-left: 48px;
+    opacity: 1;
+    z-index: 8;
+    margin-top: 10px;
+}
+
+.home-sec-innerText-des{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.home-sec-image2{
+    background-image: url('https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    width: 1200px;
+    height: 248px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000B2680;
+}
+
+.home-sec-img2-innerText-div{
+    width: 300px;
+    height: 80px;  
+    padding-top: 10em;
+    /* border: 1px solid black; */
+}
+
+.home-sec-img2-innerText1{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #f6f6f6;
+    font-weight: 500;
+    z-index: 100;
+    text-shadow: #ffffff;
+}
+
+.home-sec-img2-innerText2{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #f7f7f7;
+    font-weight: 500;
+    z-index: 8;
+}
+
+.home-sec-flex-image-div{
+    background: no-repeat url('https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg');
+    background-size: cover;
+    width: 400px;
+    height: 290px;
+    /* border: 1px solid orange; */
+    border-radius: 10px 0px 0px 10px;
+}
+
+.down-arrow-icon{
+    float: right;
+    display: flex;
+    margin-top: -12px;
+
+}

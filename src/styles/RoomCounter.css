@@ -1,0 +1,33 @@
+/* .room-heading-ptag{
+    float: left;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 13px;
+    margin-top: 20px;
+    color: #141D38;
+}
+
+.room-heading-roomNo{
+    text-align: left;
+    float: left;
+    font-size: 17px;
+    font-weight: 300;
+    color: #141D38;
+}
+
+.counter-heading-div{
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+} */
+
+.counter-button-wrap{
+    float: right;
+    background: transparent;
+}
+
+.counter-button-drop{
+    float: right;
+    margin-right: 30px;
+    background: transparent;
+}
