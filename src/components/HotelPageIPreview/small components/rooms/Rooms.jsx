@@ -17,8 +17,8 @@ import {
 
 const Rooms = () => {
   const [room, setRoom] = useState("");
-  const [priceRoom, setPriceRoom] = useState(11199)
-  console.log(priceRoom);
+  const [priceRoom, setPriceRoom] = useState(0);
+ const [ogPrise, setOgPrise] = useState(0);
   useEffect(() => {
     fetch("https://expedia-server-for.herokuapp.com/rooms")
       .then((res) => res.json())
@@ -107,10 +107,10 @@ const Rooms = () => {
                   {el.extras.map((el, id) => (
                     <div key={id} className={styles.extras_box_details_ruppes}>
                       <div
-                        className={styles.extras_box_details_ruppes_separate}
+                        className={styles.extras_box_details_ruppes_separate} onClick={()=>setPriceRoom(Number(priceRoom+el.rupees))}
                       >
                         {" "}
-                        <input type="radio" name="extras" onClick={()=>setPriceRoom(12319)}/>
+                        <input type="radio" name="extras" />
                         <Text w="200px">
                           {el.name}{" "}
                           {el.icon ? (
@@ -128,11 +128,11 @@ const Rooms = () => {
                 </div>
                 <div className={styles.price_btn_total_amount}>
                   <Text fontSize="2xl" fontWeight="700">
-                    Rs{priceRoom}
+                    Rs{ogPrise ? ogPrise: el.price}
                   </Text>
                   <div className={styles.price_btn_total_amount_flex}>
                     <div>
-                      <p>Rs {priceRoom} total</p>
+                      <p>Rs {el.price} total</p>
                       <div className={styles.price_btn_total_amount_details}>
                         {/*  */}
 
@@ -166,7 +166,6 @@ const Rooms = () => {
                           </PopoverContent>
                         </Popover>
 
-                        {/*  */}
                       </div>
                     </div>
                     <div>
@@ -178,7 +177,7 @@ const Rooms = () => {
                           padding: "22px 30px 22px 30px",
                         }}
                       >
-                        We have 5 left
+                        We have {Math.ceil(Math.random(3)*10)} left
                       </p>
                       <Button
                         bg="blue"

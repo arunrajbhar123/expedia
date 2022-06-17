@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import TodayIcon from "@mui/icons-material/Today";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import styles from "../../../styles/BookingCardPackages.css";
+// import styles from "../../../styles/BookingCardPackages.css";
 import RoomCounterDropDown from "../RoomCounterDropDown";
 import CheckBoxDisplay from "../CheckBoxDisplay";
 
