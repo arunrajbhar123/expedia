@@ -1,10 +1,10 @@
-
 import {
   Box,
   Flex,
   Image,
   Text,
   IconButton,
+  Button,
   Stack,
   Collapse,
   Icon,
@@ -13,12 +13,16 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-
+  PopoverArrow,
+  PopoverCloseButton,
+  Portal,
+  PopoverBody,
+  PopoverFooter,
   useDisclosure,
-
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
+  
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
@@ -28,14 +32,14 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box >
+    <Box>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
-        minH={"20px"}
+        color={useColorModeValue("gray:600", "white")}
+        minH={"70px"}
         py={{ base: 2 }}
-        px={{ base: 2 }}
-        borderBottom={2}
+        px={{ base: 4 }}
+        borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray:200", "gray:900")}
         align={"center"}
@@ -54,8 +58,11 @@ export default function WithSubnavigation() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}
-        marginLeft={"110px"}>
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+          marginLeft={"110px"}
+        >
           <Link to="/">
             <Image
               w="110px"
@@ -64,27 +71,98 @@ export default function WithSubnavigation() {
             />
           </Link>
 
-          <Flex display={{ base: "none", md: "flex"  }} ml={10}
-            >
-            <div style={{display:"flex", marginLeft:"-25px"}} >
-            <DesktopNav/>
-            <ChevronDownIcon marginTop={"6px"} />
+          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+            <div style={{ display: "flex", marginLeft: "-25px" }}>
+              <DesktopNav />
+              <ChevronDownIcon marginTop={"6px"} />
             </div>
           </Flex>
         </Flex>
 
         <Stack
-          flex={{ base: 1, md: 0  }}
-            marginRight={"150px"}
-            
+          flex={{ base: 1, md: 0 }}
+          marginRight={"150px"}
           justify={"flex-end"}
           direction={"row"}
           spacing={6}
         >
-         <i style={{marginRight:"-18.5px", marginTop:"2.5px"}} class="fa-solid fa-globe"></i> <text style={{fontWeight:"600", fontSize:"14px"}}> English</text>
-          <text style={{fontWeight:"600", fontSize:"14px"}}>Support</text>
-          <text style={{fontWeight:"600", fontSize:"14px"}}>Trips</text>
-          <text style={{fontWeight:"600", fontSize:"14px"}}>SignIn</text>
+          <i
+            style={{ marginRight: "-20px", marginTop: "2.5px" }}
+            class="fa-solid fa-globe"
+          ></i>
+          <Link
+            to="/"
+            style={{
+              fontWeight: "650",
+              fontSize: "14px",
+              textDecoration: "none",
+            }}
+            _hover={{ color: "blue" }}
+          >
+            {" "}
+            English
+          </Link>
+          <Link
+            to="/"
+            style={{
+              fontWeight: "650",
+              fontSize: "14px",
+              textDecoration: "none",
+            }}
+            _hover={{ color: "blue" }}
+          >
+            Support
+          </Link>
+          <Link
+            to="/"
+            style={{
+              fontWeight: "650",
+              fontSize: "14px",
+              textDecoration: "none",
+            }}
+            _hover={{ color: "blue" }}
+          >
+            Trips
+          </Link>
+          <Popover>
+            <PopoverTrigger>
+              <Link
+                to="/"
+                style={{
+                  fontWeight: "650",
+                  fontSize: "14px",
+                  textDecoration: "none",
+                }}
+                _hover={{ color: "blue" }}
+              >
+                SignIn
+              </Link>
+            </PopoverTrigger>
+            <Portal >
+              <PopoverContent>
+                <PopoverArrow />
+                <PopoverCloseButton />
+                <PopoverBody>
+                  <Text style={{color:"black",fontSize:"20px", fontWeight:"600"}}> Members can access discounts and special features</Text>
+                 {/* <PopoverHeader></PopoverHeader> */}
+                  <Button colorScheme="blue" style={{width:"270px",margin:"20px"}}>
+                    <Link to="/" style={{textDecoration:"none"}}>Sign in</Link>
+                  </Button>
+                  </PopoverBody>
+                  <PopoverBody>
+                  <Button style={{width:"270px",marginLeft:"20px"}}>
+                    <Link to="#"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}}>
+                    Create a free account</Link>
+                    </Button>
+                    </PopoverBody>
+               
+                <Link to="/"  style={{textDecoration:"none", margin:"20px"}} _hover={{color:"blue"}}>List of favourites</Link>
+                <Link to="/"  style={{textDecoration:"none",marginLeft:"20px"}} _hover={{color:"blue"}}>Expedia Rewards</Link>
+
+                <PopoverFooter style={{marginTop:"30px",marginLeft:"10px"}} _hover={{color:"blue"}}>FeedBack</PopoverFooter>
+              </PopoverContent>
+            </Portal>
+          </Popover>
         </Stack>
       </Flex>
 
@@ -195,7 +273,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label , children, href }: NavItem) => {
+const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -250,6 +328,7 @@ const MobileNavItem = ({ label , children, href }: NavItem) => {
 
 interface NavItem {
   label: string;
+ 
   subLabel?: string;
   children?: Array<NavItem>;
   href?: string;
@@ -260,38 +339,36 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "More travel",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "Stays", 
+           
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Flights",
         href: "#",
       },
+      {
+        label: "Cars",
+        href: "#",
+      },
+      {
+        label: "Packages",
+        href: "#",
+      },
+      {
+        label: "Holiday activities",
+        href: "#",
+      },
+      {
+        label: "Deals",
+        href: "#",
+      },
+      {
+        label: "Groups & meetings",
+        href: "#",
+      },
+     
     ],
   },
-//   {
-//     label: "",
-//     children: [
-//       {
-//         label: "Job Board",
-//         subLabel: "Find your dream design job",
-//         href: "#",
-//       },
-//       {
-//         label: "Freelance Projects",
-//         subLabel: "An exclusive list for contract work",
-//         href: "#",
-//       },
-//     ],
-//   },
-//   {
-//     label: "",
-//     href: "#",
-//   },
-//   {
-//     label: "",
-//     href: "#",
-//   },
+ 
 ];
