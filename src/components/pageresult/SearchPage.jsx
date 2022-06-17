@@ -4,10 +4,12 @@ import Hotels from "./Hotels"
 import "./searchPage.css"
 import axios from "axios"
 import React, { useEffect,useState } from 'react'
+import Top from "./Top";
+import { Box, Text } from "@chakra-ui/react";
 
 const SearchPage = () => {
   const [data,setData]=useState([]);
-  let city="pune"
+  let city=JSON.parse(localStorage.getItem("city")) || "pune";
   useEffect(()=>{
     axios.get(`http://localhost:8080/${city}`)
     .then((r)=>{
@@ -40,7 +42,28 @@ if (selected == 'low') {
  
 }
   return (
-  
+
+    <>
+      <Top/>
+      {/* <Box
+            style={covidBanner ? { display: "none" } : {}}
+            w="100%"
+            bg={"#343b53"}
+            color="White"
+            paddingTop="12px"
+            paddingLeft="32px"
+            className={styles.covid_banner_box}
+          >
+            <WarningTwoIcon w={5} h={5} />
+            <div className={styles.covid_banner}>
+           
+              <Text>Check COVID-19 restrications.</Text>
+              <div className={styles.covid_banner_btn}>
+                <p>Find out more</p>
+                <p onClick={() => setCovidBanner(!covidBanner)}>Dismiss</p>
+              </div>
+            </div>
+          </Box> */}
       <div className='container'>
       <div className="left">
         <div className="map">
@@ -182,7 +205,7 @@ if (selected == 'low') {
       </div>
 
       </div>
- 
+      </>
     
   )
 }

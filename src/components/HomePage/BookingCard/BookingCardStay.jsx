@@ -14,14 +14,25 @@ import styles from "../../../styles/BookingCardStay.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TodayIcon from "@mui/icons-material/Today";
 import PersonIcon from "@mui/icons-material/Person";
+import {useNavigate} from "react-router-dom";
+
+
 // import RoomCounter from "./RoomCounter";
 
 const BookingCardStay = () => {
-
+  const Navigate=useNavigate();
   const [isChecked, setIsChecked] = useState(false)
   const handleCheckBoxClick = (e) => {
     setIsChecked(e.target.checked)
   };
+  const[city,setCity]=useState("");
+  const handleSearch=()=>{
+    localStorage.setItem("city",JSON.stringify(city));
+    console.log(city);
+    Navigate("/result")
+    // <Navigate to="/result"/>
+  }
+
 
 
   return (
@@ -39,6 +50,7 @@ const BookingCardStay = () => {
               placeholder="Going to"
               h="50px"
               id="stay-card-input"
+              onChange={(e)=>setCity(e.target.value)}
             />
           </InputGroup>
 
@@ -121,7 +133,7 @@ const BookingCardStay = () => {
             h="48px"
             p="4px 16px"
             _hover={{bg:'blue.600'}}
-          >
+          onClick={handleSearch}>
             Search
           </Button>
         </WrapItem>
