@@ -60,3 +60,24 @@
 }
 
 /* room */
+
+
+
+
+
+/* trying to responsive */
+
+
+/* mobile view */
+
+@media (min-width:80px) and (max-width:400px) {
+  .mobile_View_ads{
+    display:none;
+  }
+  .mobile_container_width,.main_container{
+    width:100%;
+  }
+  .mobile_container_width{
+    padding:0;
+  }
+}

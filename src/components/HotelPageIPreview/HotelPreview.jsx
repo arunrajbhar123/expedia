@@ -35,7 +35,7 @@ const HotelPreview = () => {
   return (
     <div className={styles.only_bg_color}>
       <div className={styles.main_container}>
-        <Box w="75%" p="1.5">
+        <Box w="75%" p="1.5" className={styles.mobile_container_width}>
           <Box
             style={covidBanner ? { display: "none" } : {}}
             w="100%"
@@ -87,7 +87,7 @@ const HotelPreview = () => {
           {/* Reviews */}
           <Reviews />
         </Box>
-        <div>
+        <div className={styles.mobile_View_ads}>
           <Ads />
          <div className={styles.ads_sticky}> <Ads2 /></div>
         </div>
