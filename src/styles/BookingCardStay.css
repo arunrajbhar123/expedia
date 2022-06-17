@@ -1,0 +1,52 @@
+.Booking-stay-stack{
+    display: flex;
+    gap: 20px;
+}
+
+
+#stay-card-input{
+    border: 1px solid #343b53;
+    /* color: #201047; */
+}
+
+.stay-input-travellers{
+    /* align-items: center; */
+    width: 260px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(18, 18, 59);
+}
+
+.stay-input-personIcon{
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    font-size: 28px;
+}
+
+.stay-box-travellers-heading{
+    font-size: 13px;
+    color: #343b53;
+}
+
+.stay-room-counter{
+    border: 1px solid black;
+    width: 600px;
+    height: 300px;
+    margin-top: 54px;
+    margin-left: -139px;
+    display: none;
+}
+
+.stay-search-button-wrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.stay-search-button{
+    width: 174px;
+    height: 48px;
+    font-size: 18px;
+    background-color: #3662D8;
+}

@@ -1,0 +1,47 @@
+.Booking-card-container{
+    border: 1px solid rgb(185, 185, 185);
+    width: 80%;
+    /* height: 270px; */
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+.Booking-card-tabs{
+    /* text-align: center; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* text-align: center; */
+    padding: 0px 350px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* 343B53 */
+    color: #343B53;
+}
+
+.Booking-card-tab{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.Booking-card-tab:hover{
+    border-bottom: 2.4px solid #10182f;
+}
+
+.add-flight-span{
+    padding-top: 5px;
+    height: 70px;
+    width: 60px;
+    margin-top: 90px;
+    padding-top: 10px;
+    margin-right: 5px;
+}
+
+.add-flight-icon{
+    padding-top: 3px;
+    font-size: 20px;
+}
