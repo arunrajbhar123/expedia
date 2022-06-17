@@ -12,17 +12,16 @@ import Amenities from "./small components/amenities/Amenities";
 import Policies from "./small components/Policies/Policies";
 import Reviews from "./small components/Reviews/Reviews";
 import Navbar from "./small components/Navbar/Navbar";
-import { Routes, Route, useParams } from "react-router-dom";
 import { Ads, Ads2 } from "./small components/Advetisement/Ads";
 
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
-  const linkLe = useParams();
-  console.log("i ma", linkLe);
+
+ 
   useEffect(() => {
     axios.get("http://localhost:8080/image").then((res) => {
-      // setImgaeTop(res.data);
+    
       let numberOfImg = 0;
       const ans = [];
       while (8 > numberOfImg) {

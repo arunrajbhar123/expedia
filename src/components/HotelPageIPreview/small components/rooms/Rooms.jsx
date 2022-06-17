@@ -1,19 +1,37 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { Box, Text, Button } from "@chakra-ui/react";
-// import { axios } from "axios";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+
 import {
   Popover,
   PopoverTrigger,
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
 } from "@chakra-ui/react";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
 const Rooms = () => {
   const [room, setRoom] = useState("");
@@ -36,13 +54,16 @@ const Rooms = () => {
           Choose your room
         </Text>
         <div className={styles.date_content}>
-          <div style={{backgroundColor:"#fff"}}>
-            <input type="date"  />
-          </div>
-          <div style={{backgroundColor:"#fff"}}>
+          <div style={{ backgroundColor: "#fff" }}>
             <input type="date" />
           </div>
-          <div className={styles.date_content_width} style={{backgroundColor:"#fff"}}>
+          <div style={{ backgroundColor: "#fff" }}>
+            <input type="date" />
+          </div>
+          <div
+            className={styles.date_content_width}
+            style={{ backgroundColor: "#fff" }}
+          >
             <input type="date" />
           </div>
           <Button
@@ -55,18 +76,21 @@ const Rooms = () => {
           </Button>
         </div>
       </Box>
-      <Box >
+      <Box>
         <div className={styles.room_box_size}>
           {room &&
             room.map((el, id) => (
               <div key={id}>
                 <div>
                   <img src={el.images} alt="hotel" />
-                  {/* {el.images.map((el,id) => (
-                    <div key={id}>
-                      <img src={el} alt="" />
-                    </div>
-                  ))} */}
+                  {/* {el.images.map((el, id) => ( */}
+                   
+                    
+                      {/* <div key={id}>
+                        <img src={el.images} alt="hotel" />
+                      </div> */}
+                   
+                 
                 </div>
                 <Text
                   textAlign="start"
@@ -88,7 +112,7 @@ const Rooms = () => {
                     <i
                       className="fa fa-exclamation-circle"
                       aria-hidden="true"
-                    ></i>
+                    />
                   </p>
                   <p>Before Sun, 26 jun</p>
                   <div className={styles.flexing_Explore_more}>
@@ -119,7 +143,7 @@ const Rooms = () => {
                         </Text>
                       </div>
 
-                      <p style={{paddingRight:"12px"}}>+Rs{el.rupees}</p>
+                      <p style={{ paddingRight: "12px" }}>+Rs{el.rupees}</p>
                     </div>
                   ))}
                 </div>
@@ -133,8 +157,8 @@ const Rooms = () => {
                       <div className={styles.price_btn_total_amount_details}>
                         {/*  */}
 
-                        <Popover >
-                          <PopoverTrigger >
+                        <Popover>
+                          <PopoverTrigger>
                             {/* <Button>Trigger</Button> */}
                             <p>Price details</p>
                             {/* <ChevronRightIcon w={5} h={5} /> */}
@@ -144,19 +168,21 @@ const Rooms = () => {
                             <PopoverCloseButton />
                             <PopoverHeader>Price details!</PopoverHeader>
                             <PopoverBody>
-                             <div style={{display:"flex",color:"#111"}}>
-                              <div> <p>1 room x 1 night</p>
-                              <p>Taxes and fees</p>
-                              <p>Local tax</p>
-                              <b style={{lineHeight:"3"}}>Total</b>
+                              <div style={{ display: "flex", color: "#111" }}>
+                                <div>
+                                  {" "}
+                                  <p>1 room x 1 night</p>
+                                  <p>Taxes and fees</p>
+                                  <p>Local tax</p>
+                                  <b style={{ lineHeight: "3" }}>Total</b>
+                                </div>
+                                <div>
+                                  <p>Rs11,253</p>
+                                  <p>Rs1,013</p>
+                                  <p>Rs681</p>
+                                  <b style={{ lineHeight: "3" }}>Rs12,947</b>
+                                </div>
                               </div>
-                              <div>
-                                <p>Rs11,253</p>
-                                <p>Rs1,013</p>
-                                <p>Rs681</p>
-                                <b style={{lineHeight:"3"}}>Rs12,947</b>
-                              </div>
-                             </div>
                             </PopoverBody>
                           </PopoverContent>
                         </Popover>
@@ -169,8 +195,8 @@ const Rooms = () => {
                         style={{
                           textAlign: "end",
                           paddingBottom: "2px",
-                          color: "#840000",  
-                          padding:"22px 30px 22px 30px",
+                          color: "#840000",
+                          padding: "22px 30px 22px 30px",
                         }}
                       >
                         We have 5 left

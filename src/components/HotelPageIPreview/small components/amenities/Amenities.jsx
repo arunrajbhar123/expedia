@@ -15,7 +15,7 @@ const Amenities = () => {
           <div className={styles.main_flexing_first}>
             <div>
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Internet
@@ -28,7 +28,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Parking and public transport
@@ -41,7 +41,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Food and drink
@@ -55,7 +55,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Restaurants on site
@@ -68,7 +68,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Things to do
@@ -82,7 +82,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Family friendly
@@ -97,7 +97,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Conveniences
@@ -114,7 +114,7 @@ const Amenities = () => {
           <div className={styles.main_flexing_second}>
             <div>
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Guest servies
@@ -129,7 +129,7 @@ const Amenities = () => {
               </div>
               {/* second fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Business services
@@ -142,7 +142,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Outdoors
@@ -152,7 +152,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Accessibility
@@ -176,7 +176,7 @@ const Amenities = () => {
 
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     More
@@ -199,7 +199,7 @@ const Amenities = () => {
           <div className={styles.main_flexing_first}>
             <div>
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Bedroom
@@ -213,7 +213,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Bathroom
@@ -226,7 +226,7 @@ const Amenities = () => {
               </div>
               {/* fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-wifi" />
+                <i className="fa-solid fa-wifi" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Entertainment
@@ -242,7 +242,7 @@ const Amenities = () => {
           <div className={styles.main_flexing_second}>
             <div>
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Food and drink
@@ -254,7 +254,7 @@ const Amenities = () => {
               </div>
               {/* second fase */}
               <div className={styles.main_flexing_first_inner}>
-                <i class="fa-solid fa-bell-concierge" />
+                <i className="fa-solid fa-bell-concierge" />
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     More

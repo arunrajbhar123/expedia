@@ -4,7 +4,7 @@ import { Text, Box } from "@chakra-ui/react";
 import { StarIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const demos = {
-  soundcloud: `<div class="mapouter"><div class="gmap_canvas">
+  soundcloud: `<div className="mapouter"><div className="gmap_canvas">
     <iframe width="450px" height="250px" id="gmap_canvas" src="https://maps.google.com/maps?q=mumbai=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     <style>.mapouter{position:relative;text-align:right;}</style><style>
     .gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>`,

@@ -92,7 +92,7 @@ const Reviews = () => {
               <p>Travelled with family</p>
               <span>7 May 2022</span> <br />
               <span style={{ lineHeight: "3" }}>
-                <i class="fa-solid fa-face-smile" /> Liked: Cleanliness,
+                <i className="fa-solid fa-face-smile" /> Liked: Cleanliness,
                 property conditions {"&"} facilities
               </span>
               <br />
@@ -119,7 +119,7 @@ const Reviews = () => {
               <span>2 Mar 2022</span> <br />
               <p>Stayed 9 nights in Feb 2022 </p>
               {/* <span style={{ lineHeight: "3" }}>
-                <i class="fa-solid fa-face-smile" /> Liked: Cleanliness,
+                <i className="fa-solid fa-face-smile" /> Liked: Cleanliness,
                 property conditions {"&"} facilities
               </span> */}
               <br />
@@ -136,7 +136,7 @@ const Reviews = () => {
               <p>Travelled with family</p>
               <span>11 Feb 2022</span> <br />
               <span style={{ lineHeight: "3" }}>
-                <i class="fa-solid fa-face-smile" /> Liked: Cleanliness,
+                <i className="fa-solid fa-face-smile" /> Liked: Cleanliness,
                 property conditions {"&"} facilities
               </span>
               <br />
