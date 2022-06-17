@@ -1,0 +1,58 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "sname": "Javed",
+      "fname": "Mohammad",
+      "password": "fefefe",
+      "email": "javed233638@gmail.com",
+      "id": 2
+    },
+    {
+      "sname": "Javedfvasdva",
+      "fname": "Mohammaddfawfqa",
+      "password": "fefefe3423",
+      "email": "javed23scasfafa3638@gmail.com",
+      "id": 3
+    },
+    {
+      "sname": "Javedfvasdvafwefwe",
+      "fname": "Mohammaddfawfqaefefe",
+      "password": "fefefe3423efwef",
+      "email": "javed23scasfafa3638@gmail.cofefwefem",
+      "id": 4
+    },
+    {
+      "sname": "Javedfvasdvafwefwe",
+      "fname": "Mohammaddfawfqaefefe",
+      "password": "fefefe3423efwef",
+      "email": "javed23scasfafa3638@gmail.cofefwefem",
+      "id": 5
+    },
+    {
+      "sname": "1",
+      "fname": "user",
+      "password": "761289746hbj",
+      "email": "user1@gmail.com",
+      "id": 6
+    },
+    {
+      "sname": "Yadav",
+      "fname": "Sachin",
+      "password": "12345",
+      "email": "sachinyadav110720@gmail.com",
+      "id": 7
+    },
+    {
+      "sname": "Javed",
+      "fname": "Mohammad",
+      "password": "12345",
+      "email": "javed233638@gmail.com",
+      "id": 8
+    }
+  ]
+}
