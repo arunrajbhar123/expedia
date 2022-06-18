@@ -42,21 +42,22 @@
  
   line-height: 2px;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .payment {
   line-height: 15px;
   border: solid #ededed;
   height: 350px;
-
-  margin-top: 10px;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
 }
 .booking {
-  line-height: 12px;
+  /* line-height: 12px;
   border: solid #ededed;
   height: 500px;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 15px; */
+  font-weight: bold;
 }
 .information {
   text-overflow: clip;

@@ -31,33 +31,36 @@ function Payment() {
                   Sign In
                 </button>
               </div>
-
+              Sign in with these Social Accounts
               {/* <div className="vl"></div> */}
               <div>
                 <div>
-                  <button className="otherlogin">Sign in with Google</button>
+                <a href='/login'><img src='https://a.travel-assets.com/egds/marks/google.svg' width="12%" alt="f_login" height="15%" /></a>
+           
                 </div>
                 <br></br>
                 <div>
-                  <button className="otherlogin"> Sign in with Apple</button>
+                <a href='/login'><img src='https://a.travel-assets.com/egds/marks/apple.svg' alt='apple_login' width="12%" height="15%" /></a>
+            
                 </div>
                 <br></br>
                 <div>
-                  <button className="otherlogin">Sign in with Facebook</button>
+                <a href='/login'><img src='https://a.travel-assets.com/egds/marks/facebook.svg' alt="g_1login" width="12%" height="15%" /></a>
+            
                 </div>
               </div>
             </div>
 
             {/* customer detail input */}
 
-            <div className="custdetail">
-              <div style={{marginTop:"25px",paddingBottom:"25px"}}>
+            {/* <div className="custdetail">
+              <div style={{marginTop:"15px",paddingBottom:"15px"}}>
                 <h4>Traveller info Room 1: 2 Adults 1 King Bed Non-smoking</h4>
               </div>
               <hr></hr>
-              <div style={{ display: "flex", "line-height": 2 ,padding:"12px"}}>
+              <br></br>
+              <div style={{ display: "flex", "line-height": 2 ,padding:"9px"}}>
                 <div style={{paddingTop:"2px"}}>
-                  <p>first name</p>
                   <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px",padding:"12px"}} placeholder="First Name"/>
                 </div>
                 <div>
@@ -73,31 +76,20 @@ function Payment() {
                   placeholder="So the property can reach you"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="payment" style={{marginTop:"55px"}}>
-              <div style={{ "font-size": 12 }}>
-                <p>
-                  {" "}
-                  We use secure transmission ; We protect your personal
-                  information
-                </p>
-                <hr></hr>
+              Payment Details
+              <div>
+                <input type="text"  placeholder="Name on The Card"/>
               </div>
               <div>
-                <p>Name on card</p>
-                <input type="text" />
+                <input type="number" placeholder="Card Number"/>
               </div>
               <div>
-                <p>Debit/Credit card number*</p>
-                <input type="number" />
+                <input placeholder="CVV"/>
               </div>
               <div>
-                <p>Security code*</p>
-                <input />
-              </div>
-              <div>
-                <p>Pan</p>
-                <input />
+                <input placeholder="Pan Number" />
               </div>
             </div>
             {/* Manage your booking option */}
