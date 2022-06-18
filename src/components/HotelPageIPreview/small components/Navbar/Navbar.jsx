@@ -17,7 +17,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="overview"> overview</Link>
+               overview
             </ScrollLink>
           </li>
           <li>
@@ -27,7 +27,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="rooms">rooms</Link>
+            rooms
             </ScrollLink>{" "}
           </li>
           <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="location">location</Link>
+              location
             </ScrollLink>
           </li>
           <li>
@@ -48,7 +48,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="amenitie">amenitie</Link>
+             amenitie
             </ScrollLink>
           </li>
           <li>
@@ -58,7 +58,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="policies">policies</Link>
+           policies
             </ScrollLink>
           </li>
           <li>
@@ -68,7 +68,7 @@ const Navbar = () => {
               activeClass={styles.active}
               spy={true}
             >
-              <Link to="reviews">reviews</Link>
+           reviews
             </ScrollLink>{" "}
           </li>
         </ul>

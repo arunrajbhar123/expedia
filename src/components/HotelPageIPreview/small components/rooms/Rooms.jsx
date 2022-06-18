@@ -13,12 +13,47 @@ import {
   PopoverCloseButton,
 } from "@chakra-ui/react";
 
-
-
 const Rooms = () => {
+  const data = [
+    {
+      id: 1,
+      city: "Delhi",
+      heading1: "Le Meridien New Delhi",
+      headig2: "New Delhi",
+      img1: "https://images.trvl-media.com/hotels/1000000/540000/531700/531648/0be7b7bd.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img2: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/540000/531700/531648/db6e3fdf_b.jpg",
+      img3: "https://images.trvl-media.com/hotels/1000000/540000/531700/531648/8d2945d0.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img4: "https://images.trvl-media.com/hotels/1000000/540000/531700/531648/55467e67.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      text1: "The Capital’s Only Modern Palace Hotel",
+      text2:
+        "In AC Hotel Genova we know what need: AC Lounge and delicious breakfast, comfy rooms, common areas and the best rates.",
+      text3: "Fully refundable",
+      text4: "Reserve now, pay later",
+      rating: "4.3/5",
+      review: "Excellent",
+      no_of_reviews: "(523 reviews)",
+      heading3: "We have 5 left at",
+      price1: "Rs8,650",
+      price2: "10207",
+    },
+  ];
+  const [orOgAmount, setorOgAmount] = useState(0);
+  const [orOgAmount1, setorOgAmount1] = useState(0);
+  useEffect(() => {
+    data.map((el) => {
+      for (let i = 0; i < el.price1.length; i++) {
+        if (el.price1[i] === "Rs") {
+        } else {
+          setorOgAmount(el.price1);
+          setorOgAmount1(el.price2);
+        }
+      }
+    });
+  }, []);
+
   const [room, setRoom] = useState("");
   const [priceRoom, setPriceRoom] = useState(0);
- const [ogPrise, setOgPrise] = useState(0);
+  const [ogPrise, setOgPrise] = useState(0);
   useEffect(() => {
     fetch("https://expedia-server-for.herokuapp.com/rooms")
       .then((res) => res.json())
@@ -26,6 +61,10 @@ const Rooms = () => {
         setRoom(data);
       });
   }, []);
+const [status, setStatus] = useState(true);
+// useEffect(() => {
+//   setStatus(!status)
+// }, [])
 
   return (
     <div id="rooms">
@@ -34,15 +73,15 @@ const Rooms = () => {
           Choose your room
         </Text>
         <div className={styles.date_content}>
-          <div style={{ backgroundColor: "#fff",marginTop:"15px" }}>
+          <div style={{ backgroundColor: "#fff", marginTop: "15px" }}>
             <input type="date" />
           </div>
-          <div style={{ backgroundColor: "#fff",marginTop:"15px" }}>
+          <div style={{ backgroundColor: "#fff", marginTop: "15px" }}>
             <input type="date" />
           </div>
           <div
             className={styles.date_content_width}
-            style={{ backgroundColor: "#fff",marginTop:"18px" }}
+            style={{ backgroundColor: "#fff", marginTop: "18px" }}
           >
             <input type="date" />
           </div>
@@ -69,7 +108,6 @@ const Rooms = () => {
                         <img src={el.images} alt="hotel" />
                       </div>
 ))} */}
-
                 </div>
                 <Text
                   textAlign="start"
@@ -107,7 +145,10 @@ const Rooms = () => {
                   {el.extras.map((el, id) => (
                     <div key={id} className={styles.extras_box_details_ruppes}>
                       <div
-                        className={styles.extras_box_details_ruppes_separate} onClick={()=>setPriceRoom(Number(priceRoom+el.rupees))}
+                        className={styles.extras_box_details_ruppes_separate}
+                        onClick={() =>
+                          setPriceRoom(Number(priceRoom + el.rupees))
+                        }
                       >
                         {" "}
                         <input type="radio" name="extras" />
@@ -128,11 +169,15 @@ const Rooms = () => {
                 </div>
                 <div className={styles.price_btn_total_amount}>
                   <Text fontSize="2xl" fontWeight="700">
-                    Rs{ogPrise ? ogPrise: el.price}
+                    {/* Rs{ogPrise ? ogPrise : el.price}
+                     */}
+                    {status ? orOgAmount :120 }
+            
                   </Text>
+                 
                   <div className={styles.price_btn_total_amount_flex}>
                     <div>
-                      <p>Rs {el.price} total</p>
+                      <p>Rs{orOgAmount1} total</p>
                       <div className={styles.price_btn_total_amount_details}>
                         {/*  */}
 
@@ -165,7 +210,6 @@ const Rooms = () => {
                             </PopoverBody>
                           </PopoverContent>
                         </Popover>
-
                       </div>
                     </div>
                     <div>
@@ -177,7 +221,7 @@ const Rooms = () => {
                           padding: "22px 30px 22px 30px",
                         }}
                       >
-                        We have {Math.ceil(Math.random(3)*10)} left
+                        We have {Math.ceil(Math.random(3) * 10)} left
                       </p>
                       <Button
                         bg="blue"
