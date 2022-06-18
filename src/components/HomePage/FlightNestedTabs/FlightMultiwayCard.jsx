@@ -7,8 +7,8 @@ import styles from '../../../styles/BookingCard.css'
 
 const FlightMultiwayCard = () => {
   return (
-    <div>
-        <Stack spacing={4} mt='30px' ml='25px'>
+    <div >
+        <Stack spacing={4} mt='-80px' ml='25px'>
             <Text textAlign='left' fontSize='15px' fontWeight='700'>Flight 1</Text>
         <Flex gap="20px" align="center" w="96%" m="auto" >
           <InputGroup>

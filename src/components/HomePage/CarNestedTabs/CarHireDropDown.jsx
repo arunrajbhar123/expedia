@@ -107,7 +107,7 @@ const CarHireDropDown = () => {
                 <AccessTimeOutlinedIcon fontSize="30px" />
               </Stack>
 
-              <Text ml="15px" fontSize="13px" >
+              <Text mr="135px" fontSize="13px" >
                 Pick-up time
               </Text>
             </Flex>
@@ -122,7 +122,9 @@ const CarHireDropDown = () => {
                 border="1px solid black"
                 mt="15px"
                 overflow="scroll"
-                zIndex="8"
+                zIndex='100'
+                bg='white'  
+                
               >
                 <TimeDropDown />
               </Box>
@@ -141,11 +143,11 @@ const CarHireDropDown = () => {
                 <AccessTimeOutlinedIcon fontSize="30px" />
               </Stack>
 
-              <Text ml="15px" fontSize="13px" >
+              <Text mr="135px" fontSize="13px" >
                 Drop-off time
               </Text>
             </Flex>
-            <Text mt="-15px" textAlign="left" ml="47px" fontSize="17px" fontWeight='400'>
+            <Text mt="-15px" textAlign="left" ml="47px" fontSize="17px" fontWeight='400' >
               {selected}
             </Text>
             {isActive1 ? (
@@ -155,6 +157,8 @@ const CarHireDropDown = () => {
                 border="1px solid black"
                 mt="30px"
                 overflow="scroll"
+                zIndex='100'
+                bg='white'
               >
                 <TimeDropDown selected={selected} setSelected={setSelected} />
               </Box>

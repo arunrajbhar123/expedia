@@ -7,7 +7,7 @@ import CompareArrowsOutlinedIcon from '@mui/icons-material/CompareArrowsOutlined
 const FlightOnewayCard = () => {
   return (
     <div>
-      <Stack spacing={4}>
+      <Stack spacing={4} mt='-70px'>
         <Flex gap="20px" align="center" w="96%" m="auto" >
           <InputGroup>
             <InputLeftElement

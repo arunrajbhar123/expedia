@@ -23,13 +23,16 @@ import {
         closeOnBlur={false}
         border='1px solid orange'
       >
-        <PopoverTrigger className="counter-button-wrap">
+        <PopoverTrigger className="counter-button-wrap" >
           <Button
             className="counter-button-drop"
             bg="none"
             color="#3662D8"
             fontSize="14px"
             fontWeight="400"
+            mr='-650px'
+            mt='-20px'
+            mb='25px'
           >
             1 traveller
             <span className="down-arrow-span">
@@ -37,7 +40,7 @@ import {
             </span>
           </Button>
         </PopoverTrigger>
-        <PopoverContent color="#3662D8">
+        <PopoverContent color="#3662D8" >
           <PopoverHeader
             pt={4}
             fontWeight="500"
@@ -53,11 +56,11 @@ import {
             Travellers
             {/* <Text fontSize="15px" fontWeight="500" ml="7px" mt="8px">Room 1</Text> */}
   
-            <PopoverBody display='flex' justifyContent='space-between'>
+            <PopoverBody display='flex' justifyContent='space-between' mt="10px">
               <Text fontSize="14px" fontWeight="400" ml="-5px" mt="8px" mr='98px' color='#343B53'>Adults</Text>
               <RoomCounter />
             </PopoverBody>
-            <PopoverBody display='flex' justifyContent='space-between'>
+            <PopoverBody display='flex' justifyContent='space-between' >
               <Text fontSize="14px" fontWeight="400" ml="-5px" mt="8px" mr='88px' color='#343B53'>Children</Text>
               <RoomCounter />
             </PopoverBody>
@@ -70,7 +73,7 @@ import {
           {/* <PopoverArrow /> */}
           {/* <PopoverCloseButton /> */}
           <PopoverBody>
-            <Text textAlign='right' fontSize='16px' fontWeight='500' mb='30px'>Add another room</Text>
+            <Text textAlign='right' fontSize='16px' fontWeight='500' mb='10px' >Add another room</Text>
           </PopoverBody>
           <PopoverFooter
             border="0"

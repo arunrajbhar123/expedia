@@ -16,7 +16,7 @@ function RoomCounter() {
   const input = getInputProps()
 
   return (
-    <HStack maxW='320px'>
+    <HStack maxW='320px' >
       <Button {...dec} borderRadius='50%' background='transparent' border='1px solid  #343B53' w='35px' h='35px'>-</Button>
       <Input {...input} w='40px' border='none' bg='transparent'/>
       <Button {...inc} borderRadius='50%' background='transparent' border='1px solid #343B53' w='35px' h='35px'>+</Button>
