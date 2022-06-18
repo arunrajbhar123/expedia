@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { Text, Box } from "@chakra-ui/react";
 import { StarIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
-const city=JSON.parse(localStorage.getItem("city")) || "mumbai";
+const city=JSON.parse(localStorage.getItem("city")) || "goa";
 
 const demos = {
   soundcloud: `<div className="mapouter"><div className="gmap_canvas">
@@ -46,7 +46,7 @@ const Overview = () => {
   ];
   const data=[]
   const datadsa=JSON.parse(localStorage.getItem("hoteldata")) || data2;
- 
+  
   data.push(datadsa);
  
   const convert = [];
@@ -73,9 +73,9 @@ const Overview = () => {
 
   const exploreArea = [
     { icon: "fa-solid fa-location-dot", name: "Artis", time: "11 min walk" },
-    { icon: "fa-solid fa-location-dot", name: "Artis", time: "11 min walk" },
-    { icon: "fa-solid fa-location-dot", name: "Artis", time: "11 min walk" },
-    { icon: "fa-solid fa-location-dot", name: "Artis", time: "11 min walk" },
+    { icon: "fa-solid fa-location-dot", name: "Dam Square", time: "21 min walk" },
+    { icon: "fa-solid fa-location-dot", name: "Anne Frank House", time: "5 min walk" },
+    { icon: "fa-solid fa-location-dot", name: "Amsterdam (AMS-Schiphol)", time: "1 min walk" },
   ];
   return (
     <div id="overview" style={{ backgroundColor: "#fff" }}>
@@ -173,9 +173,10 @@ const Overview = () => {
             <div className={styles.explore_items}>
               {exploreArea.map((el, id) => (
                 <div key={id}>
-                  <div>
+                  <div  style={{display:"flex",marginTop:"12px"}}>
                     <i className={el.icon} />
-                    {el.name}
+                  <p style={{width:"150px"}}>{el.name}</p>
+                    {/* {el.name} */}
                   </div>
                   <p>{el.time}</p>
                 </div>

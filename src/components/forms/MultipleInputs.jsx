@@ -3,6 +3,7 @@ import "./form.css"
 import { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 const Multipleinputs = () => {
   const [userRegistration, setuserRegistration] = useState({
     sname: "",
@@ -14,11 +15,13 @@ const Multipleinputs = () => {
   const handleinput = (e) => {
     setuserRegistration({ ...userRegistration, [e.target.name]: e.target.value });
   }
+  const navigate= useNavigate();
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:8080/profile",userRegistration);
     alert("You Can Login Now");
     setuserRegistration({sname:"",fname:"",password:"",email:""})
+    navigate("/login")
   }
 
 

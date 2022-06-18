@@ -12,6 +12,7 @@ import Policies from "./small components/Policies/Policies";
 import Reviews from "./small components/Reviews/Reviews";
 import Navbar from "./small components/Navbar/Navbar";
 import { Ads, Ads2 } from "./small components/Advetisement/Ads";
+import { useNavigate } from "react-router-dom";
 
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
@@ -28,6 +29,10 @@ const HotelPreview = () => {
       setImgaeTop(ans);
     });
   }, []);
+  const navigate =useNavigate();
+  const handleBack=()=>{
+    navigate("/result")
+  }
 
   return (
     <div id={styles.only_bg_color}>
@@ -55,7 +60,7 @@ const HotelPreview = () => {
             </div>
           </Box>
 
-          <div className={styles.back_to_all_product}>
+          <div className={styles.back_to_all_product} onClick={handleBack}>
             <ArrowBackIcon w={5} h={5} />
             <p>See all properties</p>
           </div>

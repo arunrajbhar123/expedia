@@ -3,7 +3,10 @@ import React from 'react';
 // import axios from 'axios'
  import { Link} from 'react-router-dom';
 // import { AppContext } from '../Context/AppContext';
-import "./form.css"
+import "./form.css";
+
+import { useNavigate } from "react-router-dom";
+
 const Login = () => {
     // const [email, setemail] = useState("");
     // const [password, setpassword] = useState("");
@@ -35,8 +38,10 @@ const Login = () => {
     // if (state.isAuth) {
     //   return <Navigate to="/users" />;
     // }
-    
-  
+    const navigate=useNavigate();
+  const handleform=()=>{
+navigate("/");
+  }
   return (
     <>
     <div className='main1'>
@@ -72,7 +77,7 @@ const Login = () => {
             By creating an account, I agree to the Expedia <a href='/terms'>Terms and<br></br> Conditions</a>
             . <Link to='/privacy'>Privacy Statement</Link> and <Link to='/expendia'>Expendia Rewards term and <br></br>Conditions</Link>
           </p>
-          <button type='submit' className='btnc'>Continue</button>
+          <button type='submit' className='btnc' onClick={handleform}>Continue</button>
           <p>If you don't have an account? <Link to='/signin'>Register</Link>
             <br></br>
             or continue with  

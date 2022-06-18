@@ -2497,6 +2497,13 @@
       "password": "247586",
       "email": "arunrajbhar1998@gmail.com",
       "id": 10
+    },
+    {
+      "sname": "Rajbhar",
+      "fname": "Arun",
+      "password": "5456",
+      "email": "arunrajbhar1998@gmail.com",
+      "id": 11
     }
   ]
 }

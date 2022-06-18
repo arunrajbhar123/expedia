@@ -42,7 +42,7 @@ const HomeMidSec = () => {
       </div>
       <div>
         <div className="home-sec-image2" >
-          <div className="home-sec-img2-innerText-div" style={{marginLeft:"-px"}}>
+          <div className="home-sec-img2-innerText-div" style={{marginLeft:"-1px"}}>
             <p className="home-sec-img2-innerText1" style={{color:"#fff",fontWeight:"500"}}>Plan ahead and save</p>
             <p className="home-sec-img2-innerText2" style={{color:"#fff",fontWeight:"500"}}>
               Book 60 days in advance for 20% off select stays.
