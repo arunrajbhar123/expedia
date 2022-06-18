@@ -7,7 +7,7 @@ const Policies = () => {
       <Box marginTop="25px" bg="#fff"  borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
-            <Text fontSize="2xl" fontWeight="600">
+            <Text fontSize="2xl" fontWeight="600" style={{marginTop:"-16em"}}>
               Policies
             </Text>
           </div>
@@ -39,8 +39,8 @@ const Policies = () => {
                 </div>
               </div>
               {/* fase */}
-              <div className={styles.main_flexing_first_inner}>
-                <div>
+              <div className={styles.main_flexing_first_inner} style={{marginLeft:"-10em"}}>
+                <div >
                   <Text fontSize="2xl" fontWeight="600">
                     Access methods
                   </Text>
@@ -48,7 +48,7 @@ const Policies = () => {
                 </div>
               </div>
               {/* fase */}
-              <div className={styles.main_flexing_first_inner}>
+              <div className={styles.main_flexing_first_inner}  style={{marginLeft:"-13em"}}>
                 <div>
                   <Text fontSize="2xl" fontWeight="600">
                     Pets
@@ -100,7 +100,7 @@ const Policies = () => {
             </div>
           </div>
 
-          <div className={styles.main_flexing_second}>
+          <div className={styles.main_flexing_second} style={{marginTop:"-2px"}}>
             <div>
               <div className={styles.main_flexing_first_inner}>
                 <div>
@@ -123,7 +123,7 @@ const Policies = () => {
       <Box marginTop="25px" bg="#fff"  borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
-            <Text fontSize="2xl" fontWeight="600">
+            <Text fontSize="2xl" fontWeight="600"  style={{marginTop:"-17em"}}>
               Important information
             </Text>
           </div>

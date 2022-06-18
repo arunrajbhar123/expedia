@@ -41,10 +41,10 @@ const HomeMidSec = () => {
         </div>
       </div>
       <div>
-        <div className="home-sec-image2">
-          <div className="home-sec-img2-innerText-div">
-            <p className="home-sec-img2-innerText1">Plan ahead and save</p>
-            <p className="home-sec-img2-innerText2">
+        <div className="home-sec-image2" >
+          <div className="home-sec-img2-innerText-div" style={{marginLeft:"-px"}}>
+            <p className="home-sec-img2-innerText1" style={{color:"#fff",fontWeight:"500"}}>Plan ahead and save</p>
+            <p className="home-sec-img2-innerText2" style={{color:"#fff",fontWeight:"500"}}>
               Book 60 days in advance for 20% off select stays.
             </p>
           </div>
@@ -117,7 +117,7 @@ const HomeMidSec = () => {
               
             
           </Box>
-          <Box w='200px' h='250px'>
+          <Box w='200px' h='250px' ml="-3.5em">
             <Image src='https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_HP.png' alt='QR-code' h='150px' w='150px' m='35px 0px 0px 20px' />
             <Text fontSize='14px'color='#141D38' fontWeight='600' textAlign='center'>Scan the QR code</Text>
           </Box>

@@ -65,8 +65,8 @@ if (selected == 'low') {
             </div>
           </Box> */}
       <div className='container'>
-      <div className="left">
-        <div className="map">
+      <div className="left" style={{marginTop:"12px" ,marginLeft:"70px"}}>
+        <div className="map" style={{marginLeft:"12px"}}>
           <a href="https://goo.gl/maps/rDQdrFCP9hbswadb9">
             <img className="imgMap" src="https://c1.10times.com/map/venue/4079.png" alt="" />
             <div className="view">View in map</div>
@@ -193,7 +193,7 @@ if (selected == 'low') {
   <Hotels data={data}/>
   </div>
   
-  <div className="ad">
+  <div className="ad" style={{marginTop:"12px"}}>
         <img
           src="https://tpc.googlesyndication.com/simgad/11788750240072824287?"
           alt=""

@@ -10,7 +10,7 @@ const Hotel = ({hotel}) => {
         Navigate("/hotelpreview")
       }
   return (
-    <div className='main' onClick={()=>handleOnClick(hotel)} >
+    <div className='main' onClick={()=>handleOnClick(hotel)} style={{overflow:"hidden",marginTop:"12px"}} >
         <div className="left_img"><img className='img_left' src={hotel.img2}/></div>
         <div className='right_box'>
             <div className='heading1'>{hotel.heading1}</div>
@@ -18,12 +18,12 @@ const Hotel = ({hotel}) => {
             <div className='bottombox'>
                 <div className='bottom_left'>
                     <div className='text1'>{hotel.text1}</div>
-                    <div style={{marginTop:"-20px"}}>{hotel.text2}</div>
+                    <div >{hotel.text2}</div>
                     {/* <br/> */}
-                    <div style={{color:"green",marginTop:"-20px"}}>{hotel.text3}</div>
-                    <div style={{color:"green",marginTop:"-20px"}}>{hotel.text4}</div>
+                    <div style={{color:"green",marginTop:"12px"}}>{hotel.text3}</div>
+                    <div style={{color:"green",marginTop:"12px"}}>{hotel.text4}</div>
                     {/* <br/> */}
-                    <div >
+                    <div style={{marginTop:"12px"}}>
                         <span style={{fontWeight:"bolder"}}>{hotel.rating}{" "}</span>
                         <span>{hotel.review} </span>
                         <span>{hotel.no_of_reviews}</span>

@@ -42,7 +42,7 @@
 }
 .heading2{
     /* line-height: 0px; */
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 .bottom_left{
     width: 75%;
@@ -64,13 +64,13 @@
 .price1{
     font-size: 25px;
     font-weight: bolder;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 
 }
 .price2{
     font-size: 14px;
     color:gray;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 .heading1{
     font-size: 20px;

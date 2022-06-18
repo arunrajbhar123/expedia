@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
 .date_content div {
@@ -10,12 +11,9 @@
   cursor: pointer;
 
 }
-.date_content div input {
+.date_content  input {
   cursor: pointer;
-  /* background: rgba(255, 0, 0, 0); */
-  width:25px;
-  height:2px;
-  border:none;
+padding:12px 32px 12px 32px;
   outline: none;
 
 }
@@ -34,7 +32,8 @@
 
 .room_box_size {
   display: flex;
-  gap:25px;
+ 
+  gap:-22px;
 }
 .room_box_size div {
   width: 350px;

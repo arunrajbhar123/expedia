@@ -2,6 +2,7 @@
   display: flex;
   text-align: start;
   padding-top: 1em;
+  padding:15px;
 }
 .see_review {
   display: flex;
@@ -15,6 +16,7 @@
 .category_flex {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .hotel_category {
@@ -22,20 +24,26 @@
 }
 
 .popular_items {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: start;
-  align-items: center;
+text-align: start; */
+display: grid;
+grid-template-columns: repeat(2,1fr);
 }
 .popular_items i {
   margin-right: 12px;
+}
+.popular_items{
+  margin-top:-2px;
+  text-align: start;
 }
 .explore_items > div {
   display: flex;
   justify-content: space-between;
   padding-right: 19px;
 
-  line-height: 0.1;
+ 
 }
 .explore_items i {
   margin-right: 20px;

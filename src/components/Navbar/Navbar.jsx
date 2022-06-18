@@ -20,17 +20,26 @@ import {
   PopoverFooter,
   useDisclosure,
 } from "@chakra-ui/react";
+
 import {
   HamburgerIcon,
-  
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
+import {useNavigate} from "react-router-dom";
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  const navigate=useNavigate();
+const handleLogin=()=>{
+  navigate("/login");
+}
 
+const handleHome=()=>{
+  navigate("/");
+}
   return (
     <Box>
       <Flex
@@ -68,6 +77,7 @@ export default function WithSubnavigation() {
               w="110px"
               src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2"
               alt="Dan Abramov"
+              onClick={handleHome}
             />
           </Link>
 
@@ -134,6 +144,7 @@ export default function WithSubnavigation() {
                   textDecoration: "none",
                 }}
                 _hover={{ color: "blue" }}
+                
               >
                 SignIn
               </Link>
@@ -145,13 +156,13 @@ export default function WithSubnavigation() {
                 <PopoverBody>
                   <Text style={{color:"black",fontSize:"20px", fontWeight:"600"}}> Members can access discounts and special features</Text>
                  {/* <PopoverHeader></PopoverHeader> */}
-                  <Button colorScheme="blue" style={{width:"270px",margin:"20px"}}>
-                    <Link to="/" style={{textDecoration:"none"}}>Sign in</Link>
+                  <Button colorScheme="blue" style={{width:"270px",margin:"20px"}} onClick={handleLogin}>
+                    <Link to="/" style={{textDecoration:"none"}} >Sign in</Link>
                   </Button>
                   </PopoverBody>
                   <PopoverBody>
                   <Button style={{width:"270px",marginLeft:"20px"}}>
-                    <Link to="#"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}}>
+                    <Link to="#"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}}     onClick={handleHome}>
                     Create a free account</Link>
                     </Button>
                     </PopoverBody>
@@ -307,6 +318,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
+
           mt={2}
           pl={4}
           borderLeft={1}

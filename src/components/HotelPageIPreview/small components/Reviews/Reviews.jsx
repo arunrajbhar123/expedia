@@ -7,7 +7,7 @@ const Reviews = () => {
     <div id="reviews" className={styles.main_container_reviews}>
       <Box  bg="#fff"  borderRadius="8px">
         <div className={styles.reviews_flex}>
-          <div>
+          <div  style={{marginTop:"-1em"}}>
             <div className={styles.reviews_flex_rate_text}>
               <Text fontSize="6xl">4.4</Text>
               <div className={styles.reviews_flex_rate_text_word}>

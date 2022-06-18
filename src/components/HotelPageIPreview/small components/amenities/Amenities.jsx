@@ -8,7 +8,7 @@ const Amenities = () => {
       <Box marginTop="25px" bg="#fff" borderRadius="8px">
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
-            <Text fontSize="2xl" fontWeight="600">
+            <Text fontSize="2xl" fontWeight="600" style={{marginTop:"-21em"}}>
               Property amenities
             </Text>
           </div>
@@ -192,7 +192,7 @@ const Amenities = () => {
 
         <div className={styles.main_flexing}>
           <div className={styles.main_flexing_width}>
-            <Text fontSize="2xl" fontWeight="600">
+            <Text fontSize="2xl" fontWeight="600" style={{marginTop:"-9em"}}>
               Room amenities
             </Text>
           </div>

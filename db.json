@@ -2490,6 +2490,13 @@
       "password": "123456789",
       "email": "sachinyadav110720@gmail.com",
       "id": 9
+    },
+    {
+      "sname": "Rajbhar",
+      "fname": "Arun",
+      "password": "247586",
+      "email": "arunrajbhar1998@gmail.com",
+      "id": 10
     }
   ]
 }

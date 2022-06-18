@@ -12,7 +12,7 @@ const Hotels = ({data}) => {
   return (
     
     
-    <div>hotels
+    <div>
 
     {data.map((hotel)=>(
       

@@ -18,7 +18,7 @@ import styles from "../../styles/BookingCardStay.css";
 const Top = () => {
     let city=JSON.parse(localStorage.getItem("city"));
   return (
-    <div>
+    <div style={{marginTop:"25px",marginBottom:"25px"}}>
         <Stack spacing={4}>
         <Flex gap="10px" w="90%" m="auto">
           <InputGroup w="140em">

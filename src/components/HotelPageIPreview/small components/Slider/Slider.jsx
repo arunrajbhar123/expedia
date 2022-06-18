@@ -15,6 +15,13 @@ const city=JSON.parse(localStorage.getItem("city")) || "mumbai";
     });
   }, []);
 
+
+  const handleReFetch=(el)=>{
+    console.log("asdfgh");
+localStorage.setItem("hoteldata",JSON.stringify(el))
+
+//  localStorage.setItem("hoteldata",JSON.stringify(hotel));
+  }
   return (
     <Box marginTop="25px" marginBottom="25px" borderRadius="8px">
       <Text
@@ -26,10 +33,10 @@ const city=JSON.parse(localStorage.getItem("city")) || "mumbai";
         Similar properties
       </Text>
 
-      <div className={styles.main_main_main} id={styles.djjs}>
+      <div className={styles.main_main_main} id={styles.djjs} >
         {data &&
           data.map((el, id) => (
-            <div className={styles.main_container} key={id}>
+            <div className={styles.main_container} key={id} onClick={()=>handleReFetch(el)}>
               <img src={el.img1} alt="hotel" />
               <div className={styles.text_padding_words}>
                 <h1>{el.heading1}</h1>

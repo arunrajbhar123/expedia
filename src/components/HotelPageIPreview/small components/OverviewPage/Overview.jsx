@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import { Text, Box } from "@chakra-ui/react";
 import { StarIcon, ChevronRightIcon } from "@chakra-ui/icons";
@@ -21,7 +21,7 @@ function Iframe(props) {
 }
 
 const Overview = () => {
-  const data = [
+  const data2 = [
     {
       id: 1,
       city: "mumbai",
@@ -44,10 +44,17 @@ const Overview = () => {
       price2: "10207",
     },
   ];
+  const data=[]
+  const datadsa=JSON.parse(localStorage.getItem("hoteldata")) || data2;
+ 
+  data.push(datadsa);
+ 
   const convert = [];
-  data.map((el) => {
-    convert.push(el.rating);
-  });
+    data.map((el) => {
+      convert.push(el.rating);
+    });
+ 
+  
   const ratingNumber = convert.splice(".").join("")[0];
   const dsfj = [];
 
@@ -79,7 +86,7 @@ const Overview = () => {
             <Text fontSize="4xl" fontWeight="500">
               {el.heading1}
             </Text>
-            <div style={{ display: "flex",width:"50px" , marginRight:"22em"}}>
+            <div style={{ display: "flex" , marginRight:"22em"}}>
               {dsfj &&
                 dsfj.map((el, id) => (
                   <div key={id}>
@@ -117,20 +124,20 @@ const Overview = () => {
         <div className={styles.hotel_category}>
           {/* first category */}
           <div>
-            {" "}
-            <div className={styles.popular_items} >
+        
+            <div className={styles.popular_items} style={{marginTop:"-15px"}} >
               <Text fontSize="2xl" fontWeight="500">
                 Popular amenities
               </Text>
             </div>
             <div className={styles.popular_items}>
               {popularIcon.map((el, id) => (
-                <div key={id}>
+                <div key={id} style={{display:"flex",marginTop:"12px"}}>
                   <i className={el.name}></i>
-                  {el.title}
+                 <p style={{width:"150px"}}>{el.title}</p> 
                 </div>
               ))}
-              <div className={styles.see_review}>
+              <div className={styles.see_review} style={{marginLeft:"12px",marginTop:"12px"}}>
                 <p>See All</p> <ChevronRightIcon w={5} h={5} />
               </div>
             </div>
@@ -142,14 +149,15 @@ const Overview = () => {
                 Cleaning and safety practices
               </Text>
             </div>
-            <div className={styles.popular_items}>
+            <div className={styles.popular_items} >
               {popularIcon.map((el, id) => (
-                <div key={id}>
+                <div key={id} style={{display:"flex",marginTop:"12px"}}>
                   <i className={el.name}></i>
-                  {el.title}
+                  
+                  <p style={{width:"150px"}}>{el.title}</p>
                 </div>
               ))}
-              <div className={styles.see_review}>
+              <div className={styles.see_review} style={{marginLeft:"12px",marginTop:"12px"}}>
                 <p>See All</p> <ChevronRightIcon w={5} h={5} />
               </div>
             </div>
@@ -157,7 +165,7 @@ const Overview = () => {
         </div>
         <div>
           <div>
-            <div className={styles.popular_items} style={{ width: "450px" }}>
+            <div className={styles.popular_items} style={{ width: "450px",marginTop:"-12em" }}>
               <Text fontSize="2xl" fontWeight="500">
                 Explore the area
               </Text>

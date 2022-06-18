@@ -26,12 +26,13 @@
 }
 .map_places{
   display:flex;
-  gap:12px;
+ 
   padding-top: 12px;
 }
 .map_places i{
   margin-top:8px;
   font-size:19px;
+  margin-right:5px;
 }
 .property_about{
   padding:15px;

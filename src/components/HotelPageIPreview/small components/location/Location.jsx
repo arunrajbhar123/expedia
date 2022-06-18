@@ -23,7 +23,7 @@ const Location = () => {
       <Box marginTop="25px" bg="#fff" borderRadius="8px">
         <div className={styles.main_container}>
           <div className={styles.main_container_box_first}>
-            <Text fontSize="3xl" fontWeight="600">
+            <Text fontSize="3xl" fontWeight="600" marginTop="-10em">
               About this area
             </Text>
             <h1>Calangute</h1>
@@ -50,7 +50,7 @@ const Location = () => {
             <div className={styles.map_places}>
               <i className="fa-solid fa-location-dot" />
 
-              <div>
+              <div style={{marginLeft:"2em"}}>
                 <Text fontSize="2xl" fontWeight="600">
                   What's nearby
                 </Text>
@@ -64,7 +64,7 @@ const Location = () => {
             <div className={styles.map_places}>
               <i className="fa-solid fa-car"></i>
 
-              <div>
+              <div  style={{marginLeft:"2em"}}>
                 <Text fontSize="2xl" fontWeight="600">
                   Getting around
                 </Text>
@@ -84,7 +84,7 @@ const Location = () => {
       <Box marginTop="25px" paddingBottom="25px" bg="#fff" borderRadius="8px">
         <div className={styles.property_about}>
           <div className={styles.property_about_width_first} >
-            <Text fontSize="2xl" fontWeight="600">
+            <Text fontSize="2xl" fontWeight="600" style={{marginTop:"-4em"}}>
               About this property
             </Text>
           </div>
@@ -101,7 +101,7 @@ const Location = () => {
               </p>
             </div>
             <div className={styles.property_about_width_second}>
-              <Text fontSize="2xl" paddingBottom="12px">
+              <Text fontSize="2xl" paddingBottom="12px" >
                 Languages spoken
               </Text>
               <p>English, Hindi</p>
@@ -111,7 +111,7 @@ const Location = () => {
         <hr />
         <div className={styles.property_about}>
           <div className={styles.property_about_width_first}>
-            <Text fontSize="2xl" fontWeight="600" w="24rem">
+            <Text fontSize="2xl" fontWeight="600" w="24rem" style={{marginTop:"-10.5em"}}>
               Cleaning and safety practices
             </Text>
           </div>

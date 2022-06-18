@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-import { Box, Text, Button,Input } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import {
@@ -72,27 +72,17 @@ const [status, setStatus] = useState(true);
 
   return (
     <div id="rooms" >
-      <Box marginTop="25px">
+      <Box marginTop="15px">
         <Text fontSize="3xl" fontWeight="500">
           Choose your room
         </Text>
         <div className={styles.date_content} style={{marginBottom:"25px"}}>
-          <div 
-          style={{  backgroundColor: "#fff" }}
-          >
-            <input type="date" />
-           
-          </div>
-          <div
-           style={{ backgroundColor: "#fff" }}>
-            <input type="date"/>
-          </div>
-          <div
-            className={styles.date_content_width}
-            style={{ backgroundColor: "#fff" }}
-          >
-            <input type="date" />
-          </div>
+       
+          
+            <input type="text" placeholder="Check in"/>
+            <input type="text" placeholder="Check out"/>
+            <input type="text" placeholder="Travels Select" />
+        
           <Button
             bg="blue"
             color="#fff"

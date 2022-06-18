@@ -55,14 +55,14 @@ function Payment() {
                 <h4>Traveller info Room 1: 2 Adults 1 King Bed Non-smoking</h4>
               </div>
               <hr></hr>
-              <div style={{ display: "flex", "line-height": 2 }}>
-                <div>
+              <div style={{ display: "flex", "line-height": 2 ,padding:"12px"}}>
+                <div style={{paddingTop:"2px"}}>
                   <p>first name</p>
-                  <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px",padding:"12px"}}/>
+                  <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px",padding:"12px"}} placeholder="First Name"/>
                 </div>
                 <div>
                   <p>Surname</p>
-                  <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px" ,padding:"12px"}}/>
+                  <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px" ,padding:"12px"}} placeholder="SurName Name"/>
                 </div>
               </div>
               <div>
