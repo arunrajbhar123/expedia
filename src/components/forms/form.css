@@ -1,21 +1,29 @@
+div{
+  margin: auto;
+}
+
+div>h1{
+  font-size: 30px;
+}
 .fApp {
     text-align: center;
-    font-size: smaller;
+    /* font-size: smaller; */
     font-weight: lighter;
     margin: auto;
     border-color: grey;
     border: 0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  div{
-    margin-bottom:25px;
+  *div{
+    margin-bottom:-25px;
   }
-  input{
+  div>input{
     padding: 19px 100px 19px 100px;
     margin: auto;
+    border: 0.5px solid black;
     border-radius: 10px;
   }
-  button{
+  .btnc{
     padding: 15px 130px 15px 130px;
     background-color: rgb(0, 0, 255);
     color: white;
@@ -27,6 +35,10 @@
   .arrow{
     float: left;
   }
-  a{
-    text-decoration: none;
+  .iconlog{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(230, 222, 222);
   }
+  
+  
