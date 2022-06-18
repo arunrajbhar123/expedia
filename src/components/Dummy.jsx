@@ -24,7 +24,7 @@ const Dummy = () => {
   const [data, setData] = useState([])
         useEffect(() => {
             const getData = async () => {
-                let r = await axios.get('http://localhost:8585/goa');
+                let r = await axios.get('http://localhost:8080/goa');
                 console.log(r.data);
                 setData(r.data)
             }

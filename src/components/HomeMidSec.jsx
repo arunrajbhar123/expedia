@@ -5,8 +5,17 @@ import styles from "../styles/HomeMidSec.css";
 import { Box, Button, Flex, Image, Input, InputGroup, Popover, PopoverBody, PopoverContent, PopoverHeader, PopoverTrigger, Stack, Text, WrapItem } from "@chakra-ui/react";
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 import CountryCodeDrop from "./HomePage/CountryCodeDrop";
+import {useNavigate} from 'react-router-dom';
 
 const HomeMidSec = () => {
+
+  const Navigate = useNavigate();
+
+  const handleClickImage = () => {
+    Navigate('/ImagePage');
+  }
+
+  
   return (
     <>
       <BookingCardSection />
@@ -40,7 +49,7 @@ const HomeMidSec = () => {
           </WrapItem>
         </div>
       </div>
-      <div>
+      <div onClick={handleClickImage}>
         <div className="home-sec-image2" >
           <div className="home-sec-img2-innerText-div" style={{marginLeft:"-1px"}}>
             <p className="home-sec-img2-innerText1" style={{color:"#fff",fontWeight:"500"}}>Plan ahead and save</p>
