@@ -1,10 +1,7 @@
 .name_Hotel_map {
   display: flex;
-  justify-content: space-between;
   text-align: start;
-  padding: 15px;
-  padding-top: 22px;
-  margin-top:-25px;
+  padding-top: 1em;
 }
 .see_review {
   display: flex;
@@ -12,8 +9,9 @@
   color: rgb(0, 94, 255);
   cursor: pointer;
 }
-
-/* popular_items */
+.Hotel_location {
+  margin-left: 10em;
+}
 .category_flex {
   display: flex;
   justify-content: space-between;
@@ -22,15 +20,12 @@
 .hotel_category {
   padding: 15px;
 }
-.popular_items {
-  text-align: start;
-}
 
 .popular_items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: start;
   align-items: center;
-  
 }
 .popular_items i {
   margin-right: 12px;
@@ -38,11 +33,10 @@
 .explore_items > div {
   display: flex;
   justify-content: space-between;
-  padding-right:19px;
+  padding-right: 19px;
 
   line-height: 0.1;
 }
-.explore_items i{
+.explore_items i {
   margin-right: 20px;
 }
-

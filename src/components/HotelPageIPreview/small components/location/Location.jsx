@@ -83,7 +83,7 @@ const Location = () => {
       </Box>
       <Box marginTop="25px" paddingBottom="25px" bg="#fff" borderRadius="8px">
         <div className={styles.property_about}>
-          <div className={styles.property_about_width_first}>
+          <div className={styles.property_about_width_first} >
             <Text fontSize="2xl" fontWeight="600">
               About this property
             </Text>
@@ -169,7 +169,7 @@ const Location = () => {
             </div>
           </div>
         </div>
-        <h1>This information is provided by our partners.</h1>
+        <p style={{textAlign:"center"}}>This information is provided by our partners.</p>
       </Box>
     </div>
   );

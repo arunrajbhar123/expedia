@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Box, Text, Button,Input } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 import {
@@ -53,7 +53,7 @@ const Rooms = () => {
 
   const [room, setRoom] = useState("");
   const [priceRoom, setPriceRoom] = useState(0);
-  const [ogPrise, setOgPrise] = useState(0);
+
   useEffect(() => {
     fetch("https://expedia-server-for.herokuapp.com/rooms")
       .then((res) => res.json())
@@ -62,26 +62,25 @@ const Rooms = () => {
       });
   }, []);
 const [status, setStatus] = useState(true);
-// useEffect(() => {
-//   setStatus(!status)
-// }, [])
+
 
   return (
-    <div id="rooms">
+    <div id="rooms" >
       <Box marginTop="25px">
-        <Text fontSize="3xl" fontWeight="500" textAlign="start">
+        <Text fontSize="3xl" fontWeight="500">
           Choose your room
         </Text>
-        <div className={styles.date_content}>
-          <div style={{ backgroundColor: "#fff", marginTop: "15px" }}>
+        <div className={styles.date_content} style={{marginBottom:"25px"}}>
+          <div style={{  backgroundColor: "#fff" }}>
             <input type="date" />
+           
           </div>
-          <div style={{ backgroundColor: "#fff", marginTop: "15px" }}>
-            <input type="date" />
+          <div style={{ backgroundColor: "#fff" }}>
+            <input type="date"/>
           </div>
           <div
             className={styles.date_content_width}
-            style={{ backgroundColor: "#fff", marginTop: "18px" }}
+            style={{ backgroundColor: "#fff" }}
           >
             <input type="date" />
           </div>
@@ -133,7 +132,7 @@ const [status, setStatus] = useState(true);
                   </p>
                   <p>Before Sun, 26 jun</p>
                   <div className={styles.flexing_Explore_more}>
-                    <h1>More details</h1>
+                    <p>More details</p>
                     <ChevronRightIcon w={5} h={5} />
                   </div>
                 </div>

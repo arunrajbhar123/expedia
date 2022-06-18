@@ -30,7 +30,6 @@ const Reviews = () => {
               <Progress
                 colorScheme="gray"
                 borderRadius="5px"
-                color="red"
                 size="sm"
                 value={80}
               />

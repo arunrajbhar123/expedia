@@ -6,23 +6,28 @@
 
 .date_content div {
   border: 1px solid #111;
-  padding: 12px;
   border-radius: 8px;
   cursor: pointer;
+
 }
 .date_content div input {
   cursor: pointer;
-  background: rgba(255, 0, 0, 0);
+  /* background: rgba(255, 0, 0, 0); */
+  width:25px;
+  height:2px;
+  border:none;
+  outline: none;
+
 }
 
 .date_content div:nth-child(3) {
-  padding: 12px 72px 12px 72px;
+  padding: 5px 22px 5px 22px;
 }
 .date_content div:nth-child(2) {
-  padding: 12px 52px 12px 52px;
+  padding: 5px 22px 5px 22px;
 }
 .date_content div:nth-child(1) {
-  padding: 12px 42px 12px 42px;
+  padding: 5px 22px 5px 22px;
 }
 
 /* rooms box styles start room_box_size */
@@ -35,7 +40,8 @@
   width: 350px;
   border-radius: 7px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #fff; 
+   text-align: start;
 }
 .room_icon_benifit {
   text-align: start;

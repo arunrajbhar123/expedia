@@ -38,8 +38,10 @@ const HotelPreview = () => {
             w="100%"
             bg={"#343b53"}
             color="White"
-            paddingTop="12px"
+            paddingTop="2px"
             paddingLeft="32px"
+            mb="12px"
+            height="90px"
             className={styles.covid_banner_box}
           >
             <WarningTwoIcon w={5} h={5} />
@@ -75,12 +77,12 @@ const HotelPreview = () => {
 
           <Reviews />
         </Box>
-        <div className={styles.mobile_View_ads}>
+        {/* <div className={styles.mobile_View_ads}>
           <Ads />
           <div className={styles.ads_sticky}>
             <Ads2 />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

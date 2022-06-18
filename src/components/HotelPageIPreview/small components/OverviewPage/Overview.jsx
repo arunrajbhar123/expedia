@@ -72,14 +72,14 @@ const Overview = () => {
   ];
   return (
     <div id="overview" style={{ backgroundColor: "#fff" }}>
-      <div className={styles.name_Hotel_map}>
+      <div className={styles.name_Hotel_map} style={{paddingRight:"1em"}}>
         {data.map((el, id) => (
           <div key={id}>
             <p>{el.text1}</p>
             <Text fontSize="4xl" fontWeight="500">
               {el.heading1}
             </Text>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",width:"50px" , marginRight:"22em"}}>
               {dsfj &&
                 dsfj.map((el, id) => (
                   <div key={id}>
@@ -118,7 +118,7 @@ const Overview = () => {
           {/* first category */}
           <div>
             {" "}
-            <div className={styles.popular_items} style={{ marginTop: "-5em" }}>
+            <div className={styles.popular_items} >
               <Text fontSize="2xl" fontWeight="500">
                 Popular amenities
               </Text>
@@ -156,7 +156,7 @@ const Overview = () => {
           </div>
         </div>
         <div>
-          <div style={{ marginTop: "-5em" }}>
+          <div>
             <div className={styles.popular_items} style={{ width: "450px" }}>
               <Text fontSize="2xl" fontWeight="500">
                 Explore the area
