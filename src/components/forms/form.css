@@ -40,5 +40,12 @@ div>h1{
     justify-content: center;
     border: 2px solid rgb(230, 222, 222);
   }
-  
+ a{
+  text-decoration:solid blue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+ }
+.main1{
+  text-align: center;
+}
   
