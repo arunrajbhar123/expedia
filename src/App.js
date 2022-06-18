@@ -10,7 +10,7 @@ import Login from './components/forms/Login';
 import WithSubnavigation from "./components/Navbar/Navbar";
 import HomeMidSec from "./components/HomeMidSec.jsx";
 import SearchPage from "./components/pageresult/SearchPage";
-
+import Payment from "./components/payment/Payment.jsx"
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
     <Route exact path="/login" element={<Login />}></Route>
     <Route path="/result" element={<SearchPage/>}></Route>
     <Route path="/hotelpreview" element={<HotelPreview/>} ></Route>
+    <Route path="/payment" element={<Payment/>}/>
     </Routes>
 
 

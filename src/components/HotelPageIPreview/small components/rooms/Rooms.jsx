@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { Box, Text, Button,Input } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-
+import { useNavigate } from "react-router-dom";
 import {
+
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -14,6 +15,11 @@ import {
 } from "@chakra-ui/react";
 
 const Rooms = () => {
+
+  const navigate=useNavigate();
+  const handlePayment=()=>{
+    navigate('/payment')
+  }
   const data = [
     {
       id: 1,
@@ -71,11 +77,14 @@ const [status, setStatus] = useState(true);
           Choose your room
         </Text>
         <div className={styles.date_content} style={{marginBottom:"25px"}}>
-          <div style={{  backgroundColor: "#fff" }}>
+          <div 
+          style={{  backgroundColor: "#fff" }}
+          >
             <input type="date" />
            
           </div>
-          <div style={{ backgroundColor: "#fff" }}>
+          <div
+           style={{ backgroundColor: "#fff" }}>
             <input type="date"/>
           </div>
           <div
@@ -229,6 +238,7 @@ const [status, setStatus] = useState(true);
                         _hover={{ bg: "blue.500" }}
                         fontWeight="500"
                         fontSize="22px"
+                        onClick={handlePayment}
                       >
                         Reserve
                       </Button>
