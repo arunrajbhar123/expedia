@@ -88,7 +88,7 @@ export default function WithSubnavigation() {
         >
           <i
             style={{ marginRight: "-20px", marginTop: "2.5px" }}
-            class="fa-solid fa-globe"
+            className="fa-solid fa-globe"
           ></i>
           <Link
             to="/"

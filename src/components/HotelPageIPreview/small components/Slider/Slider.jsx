@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import { Text, Box } from "@chakra-ui/react";
+import axios from "axios";
 export const Slider = () => {
-  const obj = [{ id: "1" }, { id: "1" }, { id: "1" }, { id: "1" }];
+  const [data, setData] = useState([]);
+const city=JSON.parse(localStorage.getItem("city")) || "mumbai";
+  useEffect(() => {
+    axios.get(`https://expedia-server-for.herokuapp.com/${city}`).then((res) => {
+      const take = [];
+      for (let i = 0; i < 4; i++) {
+        take.push(res.data[i]);
+      }
+      setData(take);
+    });
+  }, []);
 
   return (
     <Box marginTop="25px" marginBottom="25px" borderRadius="8px">
@@ -16,16 +27,13 @@ export const Slider = () => {
       </Text>
 
       <div className={styles.main_main_main} id={styles.djjs}>
-        {obj &&
-          obj.map((el, id) => (
+        {data &&
+          data.map((el, id) => (
             <div className={styles.main_container} key={id}>
-              <img
-                src="//images.trvl-media.com/hotels/1000000/490000/483100/483011/acbb6394.jpg?impolicy=resizecrop&rw=1200&ra=fit"
-                alt="hotel"
-              />
+              <img src={el.img1} alt="hotel" />
               <div className={styles.text_padding_words}>
-                <h1>ibis Amsterdam Centre</h1>
-                <p style={{ paddingBottom: "12px" }}>Amsterdam</p>
+                <h1>{el.heading1}</h1>
+                <p style={{ paddingBottom: "12px" }}>{el.city}</p>
                 <div>
                   <div className={styles.icon}>
                     {" "}
@@ -42,13 +50,15 @@ export const Slider = () => {
                 </div>
                 <div className={styles.flex}>
                   <Text fontSize="2xl" fontWeight="600">
-                    4.0/5
+                    {el.rating}
                   </Text>
-                  <p className={styles.flex_second}>Very good (1003 reviews)</p>
+                  <p className={styles.flex_second}>
+                    {el.review} {el.no_of_reviews}
+                  </p>
                 </div>
                 <p>from</p>
                 <Text fontSize="3xl" fontWeight="600">
-                  Rs 13,839
+                  {el.price1}
                 </Text>
                 <span>per night</span>
               </div>

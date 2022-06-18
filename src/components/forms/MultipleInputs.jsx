@@ -24,13 +24,7 @@ const Multipleinputs = () => {
 
   return (
     <>
-      <Link to="/home" className='arrow' ><span><b>{"<<-----"}</b></span></Link>
-      <div className='fApp'>
-        <div>
-
-          <Link to="/home"><img src='https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27' alt='Logo' height="40%" width="17%" /></Link>
-          <hr></hr>
-        </div>
+    <div className='main1'>
         <h1>Create an account</h1>
         <form onSubmit={e => onSubmit(e)}>
           <div>
@@ -39,24 +33,25 @@ const Multipleinputs = () => {
               onChange={handleinput}
               name="email" id="email" placeholder='Email address'></input>
           </div>
+          <br></br>
           <div>
             <input type="text" name="fname"
               value={userRegistration.fname}
               onChange={e=>handleinput(e)}
               id="fname" placeholder='FirstName'></input>
-          </div>
+          </div> <br></br>
           <div>
             <input type="text" name="sname"
               value={userRegistration.sname}
               onChange={e=>handleinput(e)}
               id="sname" placeholder='Surname'></input>
-          </div>
+          </div> <br></br>
           <div>
             <input type="password" required name="password"
               value={userRegistration.password}
               onChange={e=>handleinput(e)}
               id="password" placeholder='Password'></input>
-          </div>
+          </div> <br></br>
           <p>
             <input type="checkbox"></input> &nbsp;Keep me signed in
           </p>
@@ -67,18 +62,19 @@ const Multipleinputs = () => {
             By creating an account, I agree to the Expedia <a href='/terms'>Terms and<br></br> Conditions</a>
             . <Link to='/privacy'>Privacy Statement</Link> and <Link to='/expendia'>Expendia Rewards term and <br></br>Conditions</Link>
           </p>
-          <button type='submit'>Continue</button>
+          <button type='submit' className='btnc'>Continue</button>
           <p>Already have an account? <Link to='/login'>Login</Link>
             <br></br>
             or continue with  
           </p>
-          <p>
-            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/apple.svg' alt='apple_login' width="2%" height="5%" /></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/facebook.svg' alt="g_login" width="2%" height="5%" /></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/google.svg' width="2%" alt="f_login" height="5%" /></a>
-          </p>
+          <div className='iconlog'>
+            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/apple.svg' alt='apple_login' width="12%" height="15%" /></a>
+            
+            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/facebook.svg' alt="g_1login" width="12%" height="15%" /></a>
+            
+            <a href='/login'><img src='https://a.travel-assets.com/egds/marks/google.svg' width="12%" alt="f_login" height="15%" /></a>
+           
+          </div>
         </form>
 
       </div>

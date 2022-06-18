@@ -2,10 +2,11 @@ import React from "react";
 import { Text, Box } from "@chakra-ui/react";
 import { ExternalLinkIcon, CheckIcon } from "@chakra-ui/icons";
 import styles from "./styles.module.css";
+const city=JSON.parse(localStorage.getItem("city")) || "varanasi";
 
 const demos = {
   soundcloud: `<div className="mapouter"><div className="gmap_canvas">
-    <iframe width="600px" height="330px" id="gmap_canvas" src="https://maps.google.com/maps?q=mumbai=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <iframe width="600px" height="330px" id="gmap_canvas" src="https://maps.google.com/maps?q=${city}=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     <style>.mapouter{position:relative;text-align:right;}</style><style>
     .gmap_canvas {overflow:hidden;background:none!important;}</style></div></div>`,
 };

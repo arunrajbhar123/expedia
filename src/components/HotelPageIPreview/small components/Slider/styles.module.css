@@ -4,7 +4,10 @@
   
 
 }
-
+.main_container img{
+  height:140px;
+  width:100%;
+}
 
 .main_container {
   width: 15rem;
