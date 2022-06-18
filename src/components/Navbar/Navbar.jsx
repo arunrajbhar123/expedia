@@ -137,7 +137,7 @@ const handleHome=()=>{
           <Popover>
             <PopoverTrigger>
               <Link
-                to="/"
+                to="/signin"
                 style={{
                   fontWeight: "650",
                   fontSize: "14px",
@@ -162,7 +162,11 @@ const handleHome=()=>{
                   </PopoverBody>
                   <PopoverBody>
                   <Button style={{width:"270px",marginLeft:"20px"}}>
-                    <Link to="#"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}}     onClick={handleHome}>
+
+                   <Link to="#"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}} onClick={handleHome}/>
+
+                    <Link to="/signin"  style={{textDecoration:"none", padding:"70px",color:"blue", fontWeight:"500"}}>
+
                     Create a free account</Link>
                     </Button>
                     </PopoverBody>
