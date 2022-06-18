@@ -1,0 +1,113 @@
+
+.container-div{
+    /* border: 1px solid black; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    width: 79%;
+    margin: auto;
+
+
+}
+
+.container-grid-item{
+    border: 1px dotted #5c5c5c;
+    height: 340px;
+    width: 380px;
+    border-radius: 10px;
+    
+}
+
+.container-grid-item:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+.image-div{
+    height: 200px;
+    width: auto;
+}
+
+.map-image{
+    height: 200px;
+    width: 380px;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.map-title-tag{
+    font-size: 20px;
+    color: #141D38;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.map-city-name{
+    font-size: 15px;
+    color: #141D38;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.horizontal-line{
+    height: 1px;
+    width: 300px;
+    margin: auto;
+    color: #f2f2f2;
+    margin-top: 15px;
+
+}
+
+.map-price-tag{
+    text-align: right;
+    color: #141D38;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 15px;
+    padding: 15px 0px 0px 0px;
+}
+
+.map-rating-tag{
+    padding: 20px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #141D38;
+    margin-left: 20px;
+}
+
+.map-reviews-num{
+    font-size: 13px;
+    font-weight: 400;
+    color: #141D38;
+    margin-left: 18px;
+    text-align: left;
+    margin-top: -9px;
+}
+
+.book-now-btn{
+    background-color: #2750c0;
+    padding: 4px 16px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.book-now-btn:hover{
+    cursor: pointer;
+    background-color: #0239ce;
+
+}
+
+.seperator{
+    height: 1px;
+    color: #f2f2f2;
+    width: auto;
+    margin: 30px 0px;
+}
