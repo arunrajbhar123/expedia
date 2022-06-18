@@ -39,7 +39,7 @@ const Login = () => {
   
   return (
     <>
-    <div>
+    <div className='main1'>
       <h1>Log in here.</h1>
       <form 
       // onSubmit={handleSubmit}
@@ -73,7 +73,7 @@ const Login = () => {
             . <Link to='/privacy'>Privacy Statement</Link> and <Link to='/expendia'>Expendia Rewards term and <br></br>Conditions</Link>
           </p>
           <button type='submit' className='btnc'>Continue</button>
-          <p>If you don't have an account? <Link to='/signup'>Register</Link>
+          <p>If you don't have an account? <Link to='/signin'>Register</Link>
             <br></br>
             or continue with  
           </p>
@@ -95,15 +95,3 @@ const Login = () => {
 export default Login
 
 
-// import React from 'react'
-
-// const Login = () => {
-//   return (
-//     <div>Login
-
-//       uyyuyu
-//     </div>
-//   )
-// }
-
-// export default Login
