@@ -2,9 +2,14 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "./styles.module.css";
 import { Button,Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+
+import {useNavigate} from "react-router-dom";
 
 const Navbar = () => {
+  const navigate=useNavigate();
+  const handlePayment=()=>{
+    navigate('/payment')
+  }
   return (
     <Box>
 
@@ -72,7 +77,7 @@ const Navbar = () => {
             </ScrollLink>{" "}
           </li>
         </ul>
-        <Button _hover={{ bg: "blue.500" }}>Reserve a room</Button>
+        <Button _hover={{ bg: "blue.500" }} onClick={handlePayment}>Reserve a room</Button>
       </div>
     </Box>
   );

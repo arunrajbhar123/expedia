@@ -16,8 +16,8 @@ const BookingCardFlight = () => {
           <Tab _selected={{ color: "blue", bg: "#E7EDFD", p:'13px 35px 13px 35px', borderRadius: '10px'}} color='#343B53' fontSize='14px' fontWeight='500'>Multi-city</Tab>
         </TabList>
 
-        <Flex justifyContent='flex-end' mt='-20px'>
-          <Box mt='-20px'>
+        <Flex justifyContent='flex-end' >
+          <Box >
             <FlightNstdDropDown/>
           </Box>
           <Box mt='-18px' mr='28px'>

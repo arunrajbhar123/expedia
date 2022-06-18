@@ -77,7 +77,7 @@ const AirportDropDown = () => {
                 <AccessTimeOutlinedIcon fontSize="30px" />
               </Stack>
 
-              <Text ml="15px" fontSize="13px" >
+              <Text mr="100px" fontSize="13px" textAlign='left' >
                Flight arrival time
               </Text>
             </Flex>

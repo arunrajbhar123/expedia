@@ -2,8 +2,9 @@
 import React from "react";
 import BookingCardSection from "./HomePage/BookingCardSection";
 import styles from "../styles/HomeMidSec.css";
-import { Box, Button, Flex, Input, InputGroup, Popover, PopoverBody, PopoverContent, PopoverHeader, PopoverTrigger, Stack, Text, WrapItem } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Input, InputGroup, Popover, PopoverBody, PopoverContent, PopoverHeader, PopoverTrigger, Stack, Text, WrapItem } from "@chakra-ui/react";
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+import CountryCodeDrop from "./HomePage/CountryCodeDrop";
 
 const HomeMidSec = () => {
   return (
@@ -49,10 +50,10 @@ const HomeMidSec = () => {
           </div>
         </div>
       </div>
-      <Stack border="1px solid black" w='79%' h='293px' m='auto' borderRadius='10px' mb='100px'>
+      <Stack border="1px solid #e2e2e2" w='79%' h='293px' m='auto' borderRadius='10px' mb='100px'>
         <Flex>
-          <div  border='1px solid orange' className='home-sec-flex-image-div'></div>
-          <Box w='650px' h='290px' border='1px solid orange'>
+          <div  className='home-sec-flex-image-div'></div>
+          <Box w='650px' h='290px'>
             <Text fontSize='32px' color='#141D38' textAlign='left' m='20px 0px 0px 20px' fontWeight='600'>Our app takes you further</Text>
             <Box w='530px' h='50px' ml='20px' >
                 <Text fontSize='14px' color='#141D38' textAlign='left' fontWeight='400'>When you book on the app you can save up to 20% on select hotels while earning double the points with every booking. With these app deals you'll save even more on trips, and that means you can take more trips, and manage it all on the go.</Text>
@@ -61,17 +62,16 @@ const HomeMidSec = () => {
                 <Text fontSize='20px' color='#141D38' textAlign='left' fontWeight='600'>Text yourself a download link for easy access</Text>
             </Box>
             <Box>
-                <Popover placement='top-start'>
+                <Popover placement='top'>
                     <PopoverTrigger >
-                        <Box float='left' ml='20px' w='165px' h='48px' border='1px solid #141D38' textAlign='left' pl='10px' boxSizing="borderBox" borderRadius='10px' p='0px 12px 0px 12px'><span>Country Code</span><br/>Click me <span className='down-arrow-icon'><ExpandMoreOutlinedIcon/></span></Box>
+                        <Box float='left' ml='20px' w='165px' h='48px' mb='-10px'  border='1px solid #141D38' textAlign='left'  boxSizing="borderBox" borderRadius='5px' p='0px 12px 0px 12px'><span>Country Code</span><br/>Click me <span className='down-arrow-icon'><ExpandMoreOutlinedIcon/></span></Box>
                     </PopoverTrigger>
-                    <PopoverContent>
+                    <PopoverContent w='250px' h='400px' overflow='scroll'>
                         <PopoverHeader fontWeight='semibold'>Popover placement</PopoverHeader>
                         {/* <PopoverArrow />
                         <PopoverCloseButton /> */}
-                        <PopoverBody>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore.
+                        <PopoverBody >
+                          <CountryCodeDrop/>
                         </PopoverBody>
                     </PopoverContent>
                 </Popover>
@@ -86,12 +86,41 @@ const HomeMidSec = () => {
                         w='11em'
                         h="48px"
                         id="stay-card-input"
+                        mt='-5px'
                         />
                     </InputGroup>
+
+                    <WrapItem className="stay-search-button-wrap" >
+                        <Button
+                          // colorScheme="messenger"
+                          bg='#3662D8'
+                          color='white'
+                          fontSize='16px'
+                          fontWeight='500'
+                          className="stay-search-button"
+                          h="48px"
+                          p="4px 16px"
+                          mt='-14px'
+                          mr='80px'
+                          _hover={{bg:'blue.600'}}
+                        >
+                          Get the app
+                        </Button>
+                    </WrapItem>
                 </Flex>
             </Box>
+            <Box  h='50px'  textAlign='left'>
+              <Text textAlign='left' ml='20px' fontSize='12px' mt='5px'>
+              By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
+              </Text>
+            </Box>
+              
+            
           </Box>
-          <Box w='200px' h='290px' border='1px solid orange'>hi</Box>
+          <Box w='200px' h='250px'>
+            <Image src='https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_HP.png' alt='QR-code' h='150px' w='150px' m='35px 0px 0px 20px' />
+            <Text fontSize='14px'color='#141D38' fontWeight='600' textAlign='center'>Scan the QR code</Text>
+          </Box>
         </Flex>
       </Stack>
     </>

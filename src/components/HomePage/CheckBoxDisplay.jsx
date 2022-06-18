@@ -4,8 +4,8 @@ import TodayIcon from "@mui/icons-material/Today";
 
 const CheckBoxDisplay = () => {
   return (
-    <div>
-        <Stack w='400px'>
+    <div style={{marginLeft: ' 0px'}}>
+        <Stack  >
             <Flex gap='20px' ml='20px'>
             <InputGroup>
             <InputLeftElement

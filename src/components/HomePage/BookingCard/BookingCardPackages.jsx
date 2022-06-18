@@ -24,13 +24,13 @@ const BookingCardPackages = () => {
   }
 
   return (
-    <div>
+    <div >
       <Box >
           <RoomCounterDropDown/>
       </Box >
         <br />
         <br/>
-      <Stack spacing={4} mt='8px'>
+      <Stack spacing={4} mt='18px'>
         <Flex gap="20px" align="center" w="92%" justifyContent="center" m='auto' ml='20px'>
           <InputGroup>
             <InputLeftElement
@@ -82,7 +82,7 @@ const BookingCardPackages = () => {
           </Checkbox>
         </Stack>
         <Stack>{isChecked ? <CheckBoxDisplay/> : null}</Stack>
-        <WrapItem className="stay-search-button-wrap">
+        <WrapItem className="stay-search-button-wrap" mt='-20px'>
           <Button
             // colorScheme="messenger"
             bg='#3662D8'

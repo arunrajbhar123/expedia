@@ -8,8 +8,8 @@ const BookingCardCar = () => {
     <div>
       <Tabs variant="rounded">
         <TabList mt='20px' gap='20px' ml='23px' mb='10px'>
-          <Tab _selected={{ color: "blue", bg: "#E7EDFD", p:'13px 35px 13px 35px', borderRadius: '10px'}} color='#343B53' fontSize='14px' fontWeight='500'>Car hire</Tab>
-          <Tab _selected={{ color: "blue", bg: "#E7EDFD", p:'13px 35px 13px 35px', borderRadius: '10px'}} color='#343B53' fontSize='14px' fontWeight='500' >Airport transport</Tab>
+          <Tab _selected={{ color: "blue", bg: "#E7EDFD", p:'13px 35px 13px 35px', borderRadius: '10px' }} color='#343B53' fontSize='14px' fontWeight='500'>Car hire</Tab>
+          <Tab _selected={{ color: "blue", bg: "#E7EDFD", p:'13px 35px 13px 35px', borderRadius: '10px' }} color='#343B53' fontSize='14px' fontWeight='500' >Airport transport</Tab>
          
         </TabList>
         

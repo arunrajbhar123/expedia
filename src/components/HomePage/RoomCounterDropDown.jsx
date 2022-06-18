@@ -55,11 +55,11 @@ function RoomCounterDropDown() {
           Travellers
           <Text fontSize="15px" fontWeight="500" ml="7px" mt="8px">Room 1</Text>
 
-          <PopoverBody display='flex' justifyContent='space-between'>
+          <PopoverBody display='flex' justifyContent='space-between'  >
             <Text fontSize="14px" fontWeight="400" ml="-5px" mt="8px" mr='98px' color='#343B53'>Adults</Text>
             <RoomCounter />
           </PopoverBody>
-          <PopoverBody display='flex' justifyContent='space-between'>
+          <PopoverBody display='flex' justifyContent='space-between' >
             <Text fontSize="14px" fontWeight="400" ml="-5px" mt="8px" mr='88px' color='#343B53'>Children</Text>
             <RoomCounter />
           </PopoverBody>
@@ -71,7 +71,7 @@ function RoomCounterDropDown() {
         </PopoverHeader>
         {/* <PopoverArrow /> */}
         {/* <PopoverCloseButton /> */}
-        <PopoverBody>
+        <PopoverBody mt='18px' mb='-10px'>
           <Text textAlign='right' fontSize='16px' fontWeight='500' mb='30px'>Add another room</Text>
         </PopoverBody>
         <PopoverFooter

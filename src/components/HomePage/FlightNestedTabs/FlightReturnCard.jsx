@@ -8,7 +8,7 @@ const FlightReturnCard = () => {
   return (
     <div>
         <Stack spacing={4}>
-        <Flex gap="20px" align="center" w="96%" m="auto" >
+        <Flex gap="20px" align="center" w="96%" m="auto" mt='-60px'>
           <InputGroup>
             <InputLeftElement
               pointerEvents="none"
