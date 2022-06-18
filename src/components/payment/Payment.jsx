@@ -1,5 +1,7 @@
 import "./Payment.css";
+import { useNavigate } from "react-router-dom";
 function Payment() {
+ const navigate= useNavigate();
   return (
     <>
       <div className="mainboxcenter">
@@ -15,7 +17,7 @@ function Payment() {
                 <p>Email address</p>
                 <input style={{marginTop:"32px",marginBottom:"22px" ,paddingLeft:"25px"}} placeholder="Email" />
                 <p>Password</p>
-                <input style={{marginTop:"32px",marginBottom:"22px",paddingLeft:"25px" }} placeholder="Password"/>
+                <input style={{marginTop:"32px",marginBottom:"22px",paddingLeft:"25px" }} placeholder="Password" type="password"/>
                 <p style={{marginTop:"32px",marginBottom:"22px"}}>
                   
                   <input type="checkbox" style={{marginRight:"5px"}}/>
@@ -86,7 +88,9 @@ function Payment() {
                 <input type="number" placeholder="Card Number"/>
               </div>
               <div>
-                <input placeholder="CVV"/>
+                <input placeholder="CVV"
+                type="password"
+                />
               </div>
               <div>
                 <input placeholder="Pan Number" />
@@ -166,6 +170,10 @@ function Payment() {
                     width: 150,
                     "background-color": "#ffbf2d",
                     "border-radius": 5,
+                  }}
+                  onClick={()=>{
+                    alert("Room booked!");
+                    navigate("/")
                   }}
                 >
                   Complete Booking

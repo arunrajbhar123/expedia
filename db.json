@@ -645,7 +645,7 @@
     {
       "id": 2,
       "city": "Goa",
-      "heading1": "Tower Genova Airport Hotel & Conference Center",
+      "heading1": "Tower Genova Airport Hotel ",
       "heading2": "Sestri Ponente",
       "img1": "https://images.trvl-media.com/hotels/1000000/30000/21000/20923/f547f19a.jpg?impolicy=resizecrop&rw=455&ra=fit",
       "img2": "https://images.trvl-media.com/hotels/1000000/30000/21000/20923/e8fa1812.jpg?impolicy=resizecrop&rw=455&ra=fit",
@@ -2504,6 +2504,27 @@
       "password": "5456",
       "email": "arunrajbhar1998@gmail.com",
       "id": 11
+    },
+    {
+      "sname": "Rajbhar",
+      "fname": "Arun",
+      "password": "25655",
+      "email": "arunrajbhar1998@gmail.com",
+      "id": 12
+    },
+    {
+      "sname": "Rajbhar",
+      "fname": "Arun",
+      "password": "6541465",
+      "email": "arunrajbhar1998@gmail.com",
+      "id": 13
+    },
+    {
+      "sname": "Rajbhar",
+      "fname": "Arun",
+      "password": "25466",
+      "email": "arunrajbhar1998@gmail.com",
+      "id": 14
     }
   ]
 }

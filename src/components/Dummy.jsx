@@ -33,10 +33,10 @@ const Dummy = () => {
   return (
     <div>
         <Box w='780px' margin='auto' >
-            <Text fontSize='54px' fontWeight='700' color='#343B53'>Travel Smarter - Book early & save</Text>
+            <Text fontSize='54px' fontWeight='700' color='#343B53' textAlign="center">Travel Smarter - Book early & save</Text>
         </Box>
         <Box>
-            <Text fontSize='16px' fontWeight='400' color='#465280' m='12px 0px 0px'>The early bird gets the deal. Save 20% on select hotels when you book 60 days in advance.</Text>
+            <Text fontSize='16px' fontWeight='400' color='#465280' m='12px 0px 0px' textAlign="center">The early bird gets the deal. Save 20% on select hotels when you book 60 days in advance.</Text>
         </Box>
         <hr style={{height: '20px', backgroundColor:'#f2f2f2', margin: '15px 0px 0px'}}/>
 
