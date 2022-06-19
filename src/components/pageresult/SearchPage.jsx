@@ -11,7 +11,7 @@ const SearchPage = () => {
   const [data,setData]=useState([]);
   let city=JSON.parse(localStorage.getItem("city")) || "pune";
   useEffect(()=>{
-    axios.get(`http://localhost:8080/${city}`)
+    axios.get(`https://expedia-server-for.herokuapp.com/${city}`)
     .then((r)=>{
       // console.log(r.data)
       setData(r.data)
