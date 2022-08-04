@@ -14,9 +14,7 @@ div>h1{
     border: 0.5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-  *div{
-    margin-bottom:-25px;
-  }
+
   div>input{
     padding: 19px 100px 19px 100px;
     margin: auto;
