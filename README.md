@@ -11,7 +11,18 @@
 * Git
 
 
-# Live Preview <a href="https://expedia-clone-004.netlify.app/">Click me</a> 
+## Deployment Link
+
+https://expedia-clone-004.netlify.app/
+
+
+## Blog Link
+
+https://medium.com/@jaisprajwal.1999/masai-school-construct-week-project-3283853a3fe6
+
+## Presentation Video Link
+
+https://drive.google.com/file/d/1RKx6Ufn2tJq8lxnFbsaKvRasRo-YI4AO/view
 
 
 
