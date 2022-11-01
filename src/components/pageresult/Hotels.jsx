@@ -14,7 +14,7 @@ const Hotels = ({data}) => {
     
     <div>
 
-    {data.map((hotel)=>(
+    {data?.map((hotel)=>(
       
       <Hotel  key={hotel.id} hotel={hotel} />
     ))}
