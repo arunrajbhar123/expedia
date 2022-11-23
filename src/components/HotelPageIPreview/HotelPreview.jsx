@@ -13,26 +13,24 @@ import Reviews from "./small components/Reviews/Reviews";
 import Navbar from "./small components/Navbar/Navbar";
 import { Ads, Ads2 } from "./small components/Advetisement/Ads";
 import { useNavigate } from "react-router-dom";
-
+import data from "./data.json";
 const HotelPreview = () => {
   const [imgaeTop, setImgaeTop] = useState([]);
   const [covidBanner, setCovidBanner] = useState(false);
 
   useEffect(() => {
-    axios.get("https://expedia-server-for.herokuapp.com/image").then((res) => {
-      let numberOfImg = 0;
-      const ans = [];
-      while (8 > numberOfImg) {
-        ans.push(res.data[numberOfImg]);
-        numberOfImg++;
-      }
-      setImgaeTop(ans);
-    });
+    let numberOfImg = 0;
+    const ans = [];
+    while (8 > numberOfImg) {
+      ans.push(data?.image[numberOfImg]);
+      numberOfImg++;
+    }
+    setImgaeTop(ans);
   }, []);
-  const navigate =useNavigate();
-  const handleBack=()=>{
-    navigate("/result")
-  }
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/result");
+  };
 
   return (
     <div id={styles.only_bg_color}>
@@ -51,7 +49,6 @@ const HotelPreview = () => {
           >
             <WarningTwoIcon w={5} h={5} />
             <div className={styles.covid_banner}>
-           
               <Text>Check COVID-19 restrications.</Text>
               <div className={styles.covid_banner_btn}>
                 <p>Find out more</p>
